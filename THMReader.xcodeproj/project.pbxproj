@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		94854F231EC0BDBA00283EA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94854F221EC0BDBA00283EA9 /* AppDelegate.swift */; };
+		94854F251EC0BDBA00283EA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94854F241EC0BDBA00283EA9 /* ViewController.swift */; };
+		94854F281EC0BDBA00283EA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94854F261EC0BDBA00283EA9 /* Main.storyboard */; };
+		94854F2A1EC0BDBA00283EA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94854F291EC0BDBA00283EA9 /* Assets.xcassets */; };
+		94854F2D1EC0BDBA00283EA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94854F2B1EC0BDBA00283EA9 /* LaunchScreen.storyboard */; };
+		94854F321EC0BDBA00283EA9 /* THMReader WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 94854F311EC0BDBA00283EA9 /* THMReader WatchKit App.app */; };
+		94854F381EC0BDBA00283EA9 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94854F361EC0BDBA00283EA9 /* Interface.storyboard */; };
+		94854F3A1EC0BDBA00283EA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94854F391EC0BDBA00283EA9 /* Assets.xcassets */; };
+		94854F411EC0BDBA00283EA9 /* THMReader WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 94854F401EC0BDBA00283EA9 /* THMReader WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		94854F461EC0BDBA00283EA9 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94854F451EC0BDBA00283EA9 /* InterfaceController.swift */; };
+		94854F481EC0BDBA00283EA9 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94854F471EC0BDBA00283EA9 /* ExtensionDelegate.swift */; };
+		94854F4A1EC0BDBA00283EA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94854F491EC0BDBA00283EA9 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		94854F331EC0BDBA00283EA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94854F171EC0BDBA00283EA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94854F301EC0BDBA00283EA9;
+			remoteInfo = "THMReader WatchKit App";
+		};
+		94854F421EC0BDBA00283EA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94854F171EC0BDBA00283EA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94854F3F1EC0BDBA00283EA9;
+			remoteInfo = "THMReader WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		94854F511EC0BDBA00283EA9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				94854F411EC0BDBA00283EA9 /* THMReader WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94854F551EC0BDBA00283EA9 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				94854F321EC0BDBA00283EA9 /* THMReader WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		94854F1F1EC0BDBA00283EA9 /* THMReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = THMReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		94854F221EC0BDBA00283EA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		94854F241EC0BDBA00283EA9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		94854F271EC0BDBA00283EA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		94854F291EC0BDBA00283EA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		94854F2C1EC0BDBA00283EA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		94854F2E1EC0BDBA00283EA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94854F311EC0BDBA00283EA9 /* THMReader WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "THMReader WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94854F371EC0BDBA00283EA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		94854F391EC0BDBA00283EA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		94854F3B1EC0BDBA00283EA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94854F401EC0BDBA00283EA9 /* THMReader WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "THMReader WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94854F451EC0BDBA00283EA9 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		94854F471EC0BDBA00283EA9 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		94854F491EC0BDBA00283EA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		94854F4B1EC0BDBA00283EA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		94854F1C1EC0BDBA00283EA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94854F3D1EC0BDBA00283EA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		94854F161EC0BDBA00283EA9 = {
+			isa = PBXGroup;
+			children = (
+				94854F211EC0BDBA00283EA9 /* THMReader */,
+				94854F351EC0BDBA00283EA9 /* THMReader WatchKit App */,
+				94854F441EC0BDBA00283EA9 /* THMReader WatchKit Extension */,
+				94854F201EC0BDBA00283EA9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		94854F201EC0BDBA00283EA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94854F1F1EC0BDBA00283EA9 /* THMReader.app */,
+				94854F311EC0BDBA00283EA9 /* THMReader WatchKit App.app */,
+				94854F401EC0BDBA00283EA9 /* THMReader WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		94854F211EC0BDBA00283EA9 /* THMReader */ = {
+			isa = PBXGroup;
+			children = (
+				94854F221EC0BDBA00283EA9 /* AppDelegate.swift */,
+				94854F241EC0BDBA00283EA9 /* ViewController.swift */,
+				94854F261EC0BDBA00283EA9 /* Main.storyboard */,
+				94854F291EC0BDBA00283EA9 /* Assets.xcassets */,
+				94854F2B1EC0BDBA00283EA9 /* LaunchScreen.storyboard */,
+				94854F2E1EC0BDBA00283EA9 /* Info.plist */,
+			);
+			path = THMReader;
+			sourceTree = "<group>";
+		};
+		94854F351EC0BDBA00283EA9 /* THMReader WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				94854F361EC0BDBA00283EA9 /* Interface.storyboard */,
+				94854F391EC0BDBA00283EA9 /* Assets.xcassets */,
+				94854F3B1EC0BDBA00283EA9 /* Info.plist */,
+			);
+			path = "THMReader WatchKit App";
+			sourceTree = "<group>";
+		};
+		94854F441EC0BDBA00283EA9 /* THMReader WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				94854F451EC0BDBA00283EA9 /* InterfaceController.swift */,
+				94854F471EC0BDBA00283EA9 /* ExtensionDelegate.swift */,
+				94854F491EC0BDBA00283EA9 /* Assets.xcassets */,
+				94854F4B1EC0BDBA00283EA9 /* Info.plist */,
+			);
+			path = "THMReader WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		94854F1E1EC0BDBA00283EA9 /* THMReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94854F561EC0BDBA00283EA9 /* Build configuration list for PBXNativeTarget "THMReader" */;
+			buildPhases = (
+				94854F1B1EC0BDBA00283EA9 /* Sources */,
+				94854F1C1EC0BDBA00283EA9 /* Frameworks */,
+				94854F1D1EC0BDBA00283EA9 /* Resources */,
+				94854F551EC0BDBA00283EA9 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94854F341EC0BDBA00283EA9 /* PBXTargetDependency */,
+			);
+			name = THMReader;
+			productName = THMReader;
+			productReference = 94854F1F1EC0BDBA00283EA9 /* THMReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		94854F301EC0BDBA00283EA9 /* THMReader WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94854F521EC0BDBA00283EA9 /* Build configuration list for PBXNativeTarget "THMReader WatchKit App" */;
+			buildPhases = (
+				94854F2F1EC0BDBA00283EA9 /* Resources */,
+				94854F511EC0BDBA00283EA9 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94854F431EC0BDBA00283EA9 /* PBXTargetDependency */,
+			);
+			name = "THMReader WatchKit App";
+			productName = "THMReader WatchKit App";
+			productReference = 94854F311EC0BDBA00283EA9 /* THMReader WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		94854F3F1EC0BDBA00283EA9 /* THMReader WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94854F4E1EC0BDBA00283EA9 /* Build configuration list for PBXNativeTarget "THMReader WatchKit Extension" */;
+			buildPhases = (
+				94854F3C1EC0BDBA00283EA9 /* Sources */,
+				94854F3D1EC0BDBA00283EA9 /* Frameworks */,
+				94854F3E1EC0BDBA00283EA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "THMReader WatchKit Extension";
+			productName = "THMReader WatchKit Extension";
+			productReference = 94854F401EC0BDBA00283EA9 /* THMReader WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		94854F171EC0BDBA00283EA9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Zühlke Engineering GmbH";
+				TargetAttributes = {
+					94854F1E1EC0BDBA00283EA9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = WE27MBG759;
+						ProvisioningStyle = Automatic;
+					};
+					94854F301EC0BDBA00283EA9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = WE27MBG759;
+						ProvisioningStyle = Automatic;
+					};
+					94854F3F1EC0BDBA00283EA9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = WE27MBG759;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 94854F1A1EC0BDBA00283EA9 /* Build configuration list for PBXProject "THMReader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 94854F161EC0BDBA00283EA9;
+			productRefGroup = 94854F201EC0BDBA00283EA9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				94854F1E1EC0BDBA00283EA9 /* THMReader */,
+				94854F301EC0BDBA00283EA9 /* THMReader WatchKit App */,
+				94854F3F1EC0BDBA00283EA9 /* THMReader WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		94854F1D1EC0BDBA00283EA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94854F2D1EC0BDBA00283EA9 /* LaunchScreen.storyboard in Resources */,
+				94854F2A1EC0BDBA00283EA9 /* Assets.xcassets in Resources */,
+				94854F281EC0BDBA00283EA9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94854F2F1EC0BDBA00283EA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94854F3A1EC0BDBA00283EA9 /* Assets.xcassets in Resources */,
+				94854F381EC0BDBA00283EA9 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94854F3E1EC0BDBA00283EA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94854F4A1EC0BDBA00283EA9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		94854F1B1EC0BDBA00283EA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94854F251EC0BDBA00283EA9 /* ViewController.swift in Sources */,
+				94854F231EC0BDBA00283EA9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94854F3C1EC0BDBA00283EA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94854F481EC0BDBA00283EA9 /* ExtensionDelegate.swift in Sources */,
+				94854F461EC0BDBA00283EA9 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		94854F341EC0BDBA00283EA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94854F301EC0BDBA00283EA9 /* THMReader WatchKit App */;
+			targetProxy = 94854F331EC0BDBA00283EA9 /* PBXContainerItemProxy */;
+		};
+		94854F431EC0BDBA00283EA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94854F3F1EC0BDBA00283EA9 /* THMReader WatchKit Extension */;
+			targetProxy = 94854F421EC0BDBA00283EA9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		94854F261EC0BDBA00283EA9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94854F271EC0BDBA00283EA9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		94854F2B1EC0BDBA00283EA9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94854F2C1EC0BDBA00283EA9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		94854F361EC0BDBA00283EA9 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94854F371EC0BDBA00283EA9 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		94854F4C1EC0BDBA00283EA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		94854F4D1EC0BDBA00283EA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		94854F4F1EC0BDBA00283EA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = WE27MBG759;
+				INFOPLIST_FILE = "THMReader WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zuehlke.THMReader.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		94854F501EC0BDBA00283EA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = WE27MBG759;
+				INFOPLIST_FILE = "THMReader WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zuehlke.THMReader.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		94854F531EC0BDBA00283EA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WE27MBG759;
+				IBSC_MODULE = THMReader_WatchKit_Extension;
+				INFOPLIST_FILE = "THMReader WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zuehlke.THMReader.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		94854F541EC0BDBA00283EA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WE27MBG759;
+				IBSC_MODULE = THMReader_WatchKit_Extension;
+				INFOPLIST_FILE = "THMReader WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zuehlke.THMReader.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		94854F571EC0BDBA00283EA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WE27MBG759;
+				INFOPLIST_FILE = THMReader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zuehlke.THMReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		94854F581EC0BDBA00283EA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WE27MBG759;
+				INFOPLIST_FILE = THMReader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zuehlke.THMReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		94854F1A1EC0BDBA00283EA9 /* Build configuration list for PBXProject "THMReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94854F4C1EC0BDBA00283EA9 /* Debug */,
+				94854F4D1EC0BDBA00283EA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94854F4E1EC0BDBA00283EA9 /* Build configuration list for PBXNativeTarget "THMReader WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94854F4F1EC0BDBA00283EA9 /* Debug */,
+				94854F501EC0BDBA00283EA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		94854F521EC0BDBA00283EA9 /* Build configuration list for PBXNativeTarget "THMReader WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94854F531EC0BDBA00283EA9 /* Debug */,
+				94854F541EC0BDBA00283EA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		94854F561EC0BDBA00283EA9 /* Build configuration list for PBXNativeTarget "THMReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94854F571EC0BDBA00283EA9 /* Debug */,
+				94854F581EC0BDBA00283EA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 94854F171EC0BDBA00283EA9 /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module FeedKit {
+  umbrella header "FeedKit-iOS10.0-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,1540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0714154FDD05B0E27BDCA4DE1CBDD299 /* RSSPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FE1D006CA6DA80386FD5740F7DA525 /* RSSPath.swift */; };
+		073051628F15D713441839EA0AB0C154 /* AtomFeedAuthor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3472592007126B8AD32440C5EDE4E4 /* AtomFeedAuthor.swift */; };
+		07D901DE8BA372527CAAB96F7A2E0058 /* AtomFeed + Attributes Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20CE8BC8E19A5BAF250AC005A3048D /* AtomFeed + Attributes Mapper.swift */; };
+		07DCBA0D1603965200028D5664216BB9 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CCBEC4EA7D4A640693860727C9B2E7 /* Parser.swift */; };
+		0961AC103EBBA70B4386DB3FF9D4792A /* RFC3339DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9672F68CF6A28DAB952174CCED2F52 /* RFC3339DateFormatter.swift */; };
+		0994FE4899EB14B6DC58A127196F3997 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7752798AED75D2190758A21548AB728 /* Foundation.framework */; };
+		0CB6A38749775AD273FFCDBAE5CDEDC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9AE61DEB7F70B8D5B09290911F0E1C8 /* Foundation.framework */; };
+		0FEB53A9B1C2AB6A5EC47114029AEF6A /* AtomFeedContributor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BC4143EB17EFE70E7C5473C8A5F8B7 /* AtomFeedContributor.swift */; };
+		108C9A8B748CBCFD9820B3B163259441 /* AtomFeedEntryCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7025D41103630584D66E9ED84C9680 /* AtomFeedEntryCategory.swift */; };
+		1248924CA4E5BE11D80C5DC68CC00FF7 /* RSSFeedItemSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7D43ECBEBD43C743FA366E4E54456D /* RSSFeedItemSource.swift */; };
+		1278FB8A13D2D834344D10215106873D /* RSSFeed + Characters Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D29AB4FE293D9F4D61AF32C546C429 /* RSSFeed + Characters Mapper.swift */; };
+		141020968E4C7E50E8E62E3F5BDA1729 /* DateSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BBA5007E210399A2D832BAA5393621 /* DateSpec.swift */; };
+		14719BEDA52577F8C8F6AC3EC1FFB655 /* SyndicationUpdatePeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E32E068381324150798EC291F18DF92 /* SyndicationUpdatePeriod.swift */; };
+		1478647D7CAB33A564DE98EAD5620F40 /* ContentNamespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903285C91A836C63099125664281FAD6 /* ContentNamespace.swift */; };
+		14871B00DAADCDBB33D1A7FA78FA5075 /* RSSFeedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B676B75111FFAFEAB84FD8D2EB93C73 /* RSSFeedImage.swift */; };
+		15BBFB2F41B4B6A17D7B37483E97FF0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7752798AED75D2190758A21548AB728 /* Foundation.framework */; };
+		17DA92670F7E03EF15312C5E59A2C961 /* AtomFeedEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0BBF3C1B2F01BC6B2886955F5F57F1 /* AtomFeedEntry.swift */; };
+		1A0FE62F5AE13F0DE266BEAF9A730E6E /* DateSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BBA5007E210399A2D832BAA5393621 /* DateSpec.swift */; };
+		1A5D4798ABDA5E6FE5398CAEDF588EEC /* FeedKit-watchOS2.0-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 918D4A3C0E4FB1529F187BD0D2C03650 /* FeedKit-watchOS2.0-dummy.m */; };
+		1C1B6DB8DA32578D31735BA15800BF18 /* RSSFeedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B676B75111FFAFEAB84FD8D2EB93C73 /* RSSFeedImage.swift */; };
+		1F65896128F7BA09AE0CE2F0D2EE6452 /* AtomFeedEntryContributor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A61D22A512448B693E11F0052C1DF8 /* AtomFeedEntryContributor.swift */; };
+		1FA81E64A8B7F6CF84C8C054B0E9FF07 /* SyndicationNamespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EE5698B58107F0D03625EABEFA67B9 /* SyndicationNamespace.swift */; };
+		20B300AE70886036E0FBDDA0069698DC /* AtomFeedSubtitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4916E67D7DA94D5C98C0A577086338B4 /* AtomFeedSubtitle.swift */; };
+		22DDFE4CC4685012213C4CF6A83706CF /* AtomFeedEntryContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507A8CA79E1379BCC61A406B67A28563 /* AtomFeedEntryContent.swift */; };
+		23ABECE225FF555E46D1F643FEA1CED1 /* RFC822DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26681E4E7F0E8E400CD39C0A069CEFC /* RFC822DateFormatter.swift */; };
+		23E76FAA0F466F9BD797E8E5CCA33512 /* FeedKit-watchOS3.1-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E250420F31E2AD5811B9E098DFAD75A /* FeedKit-watchOS3.1-dummy.m */; };
+		25149E9A3CFC0F17FD41F4C0CD07CCA0 /* DateSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BBA5007E210399A2D832BAA5393621 /* DateSpec.swift */; };
+		255BCDB861AE42C8C7E5AB2A6EDB19CF /* Pods-THMReader WatchKit Extension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 86F02DA4E8995EDD6ECBB255FA63A195 /* Pods-THMReader WatchKit Extension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27963EF11D67797025AABC6CC23D7767 /* String + dateFromSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131CC1874357E08582F5EB147A6D7A3E /* String + dateFromSpec.swift */; };
+		2904822FB96EC2B2DB12F06A5383E4E3 /* RSSFeedSkipHour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BC2904752C43392293AEA2B40E744B /* RSSFeedSkipHour.swift */; };
+		2974D8D111BC60BF00B0544745BCD85C /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A959CF68E9331057C65BF3A3AC6BB7 /* Result.swift */; };
+		2D6018C720AB3F39387E5B22493356FA /* AtomFeedEntrySource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4966CFECB8884BB2C9066FC2B86DD3 /* AtomFeedEntrySource.swift */; };
+		30FA4551D1D369251BF579EF3F64D900 /* AtomFeedContributor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BC4143EB17EFE70E7C5473C8A5F8B7 /* AtomFeedContributor.swift */; };
+		31EA046A58BE36C9A58C5983DCEDEFCF /* RSSFeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9102C19601C42CAC45AC6676F4EB468A /* RSSFeedItem.swift */; };
+		321F5D4B3202A0C45C63D2730DE3244B /* AtomFeedGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FF2AD19459025C1FD6CB070EAC377C /* AtomFeedGenerator.swift */; };
+		3261DF0FE19F2659F8F884CC09B5AF0B /* FeedType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157484178EFFE922E4B23AE1B3B072BC /* FeedType.swift */; };
+		33FFC26DBC8BD3B19CB4F5C1718E9F53 /* RFC822DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26681E4E7F0E8E400CD39C0A069CEFC /* RFC822DateFormatter.swift */; };
+		36D59EEA95927BD4EB75C87F8459A482 /* ISO8601DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C8E5E45FB4F70008B3DC99AC5C5EF4 /* ISO8601DateFormatter.swift */; };
+		390474428229BE290C2C41E8F613CA5A /* RSSFeedItemCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4DCF3AEF69E2B091415FCDB3AB2AF8 /* RSSFeedItemCategory.swift */; };
+		3C635E7981804B755805B49C8E47C12E /* RSSFeedTextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D44F25296E3702E942AC630CDD948 /* RSSFeedTextInput.swift */; };
+		40763E0C0A3313471BFDB4577EF83E3E /* RSSPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FE1D006CA6DA80386FD5740F7DA525 /* RSSPath.swift */; };
+		4218C8A5076075993F219070592C7005 /* RSSFeedItemSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7D43ECBEBD43C743FA366E4E54456D /* RSSFeedItemSource.swift */; };
+		42F4557EFA3B318C1FB45B0B29D34F78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7752798AED75D2190758A21548AB728 /* Foundation.framework */; };
+		449CAB9D281639FA0E7D1E23608B46E9 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CCBEC4EA7D4A640693860727C9B2E7 /* Parser.swift */; };
+		45217C274F1D8F193C1A0FC7D136FA65 /* RSSFeedCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A631505D1A53DB5FF4258529E18B6D1 /* RSSFeedCloud.swift */; };
+		45F24520BF2EB07C3ED923C6C6A59B3E /* RSSFeedCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7BFCD9315AF2AFF8362728B88B4AEC /* RSSFeedCategory.swift */; };
+		476188B15E935B465B1EEABC785FB075 /* AtomFeed + Attributes Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20CE8BC8E19A5BAF250AC005A3048D /* AtomFeed + Attributes Mapper.swift */; };
+		48B3FAD14E377CABA627874FF5C1060B /* FeedType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157484178EFFE922E4B23AE1B3B072BC /* FeedType.swift */; };
+		48D536C85B4E6BE4F030CBBF8CB64664 /* RSSFeedItemCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4DCF3AEF69E2B091415FCDB3AB2AF8 /* RSSFeedItemCategory.swift */; };
+		49606E567EF8DCAEFC17C0A6E41D0E91 /* AtomFeedAuthor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3472592007126B8AD32440C5EDE4E4 /* AtomFeedAuthor.swift */; };
+		4B644F467495A83B79F15B69ED950C91 /* FeedKit-iOS10.0-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F421BC7005BE2FB42336F805121FE88F /* FeedKit-iOS10.0-dummy.m */; };
+		4B76AA84AED58E9146C01E0A057C500B /* RSSFeed + Attributes Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3294240B729E56FB0D0806ACFAB6391A /* RSSFeed + Attributes Mapper.swift */; };
+		4BE340DD576590F8C0544E5E8DDB28CB /* AtomFeedEntrySource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4966CFECB8884BB2C9066FC2B86DD3 /* AtomFeedEntrySource.swift */; };
+		4E9DDF4AAEFB90E73BBED8C8A8C7C672 /* RFC822DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26681E4E7F0E8E400CD39C0A069CEFC /* RFC822DateFormatter.swift */; };
+		4F3F480AF9E8471A53937956FEAD5E8F /* AtomFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58823D1BC2B792E7F9CAFC68DA93747E /* AtomFeed.swift */; };
+		502EAFEAF960417A8345602B90A056F7 /* AtomFeedEntryLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F9EE1EC1B84874BCAA435E2A7BFBDA /* AtomFeedEntryLink.swift */; };
+		522B2E3494FF32A449D6C96B6913827F /* AtomFeedGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FF2AD19459025C1FD6CB070EAC377C /* AtomFeedGenerator.swift */; };
+		55988A667B14BD30056611EAF0F31645 /* Pods-THMReader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 66BB635D5177D44B0EEA5C5D20C0ECFC /* Pods-THMReader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A3AC00CC68A3B85283FD597CCBFDCC4 /* AtomFeed + Characters Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABFD43973157EA8DED23C9BDAE039D2 /* AtomFeed + Characters Mapper.swift */; };
+		5E3B647A30194DA86278D9635D249875 /* RSSFeedSkipDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D1736534169F458BDAB64CF0178E96 /* RSSFeedSkipDay.swift */; };
+		5E4F729571FC4DBA2C6B956FD389DF14 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CCBEC4EA7D4A640693860727C9B2E7 /* Parser.swift */; };
+		5F1DFB7CE87792325A8BE30889503E45 /* ParserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E660C2300F3F325ECE860C680A6063 /* ParserError.swift */; };
+		6269E1B348177712D37ACBCAD1F57824 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A959CF68E9331057C65BF3A3AC6BB7 /* Result.swift */; };
+		6295F0235DB197DA3AEB1E202AFF8A26 /* RSSFeedCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A631505D1A53DB5FF4258529E18B6D1 /* RSSFeedCloud.swift */; };
+		68F8D4D396DC8ED8D0A6C4BFC3D9BA09 /* RSSFeedItemEnclosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC94FA5CDDDCDBB466DF28A923BDE04 /* RSSFeedItemEnclosure.swift */; };
+		6AE79B5A23B072B6273C2DFE17404F6A /* AtomFeed + Characters Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABFD43973157EA8DED23C9BDAE039D2 /* AtomFeed + Characters Mapper.swift */; };
+		6AFFC9A8E12361BBF44CCCF5128C9AFA /* AtomFeedEntryLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F9EE1EC1B84874BCAA435E2A7BFBDA /* AtomFeedEntryLink.swift */; };
+		6B3F4AB20525A776A83A6F6C1C1E7A31 /* AtomFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58823D1BC2B792E7F9CAFC68DA93747E /* AtomFeed.swift */; };
+		6B6F5ED92241A1BC23C0B1FCF7C282B7 /* ParserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E660C2300F3F325ECE860C680A6063 /* ParserError.swift */; };
+		6D2DDCE567F7C2C92494833BE2694E33 /* RSSFeedItemEnclosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC94FA5CDDDCDBB466DF28A923BDE04 /* RSSFeedItemEnclosure.swift */; };
+		6D4B0A565937DCCC9C106C5382BE3616 /* RSSPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FE1D006CA6DA80386FD5740F7DA525 /* RSSPath.swift */; };
+		6EA4DA0910FB14A48B6F9096F5354234 /* RSSFeedItemEnclosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC94FA5CDDDCDBB466DF28A923BDE04 /* RSSFeedItemEnclosure.swift */; };
+		6F81913177BE03FCC57D46B5F664207C /* RSSFeed + Attributes Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3294240B729E56FB0D0806ACFAB6391A /* RSSFeed + Attributes Mapper.swift */; };
+		723AB0DA2AEA85FCCE9D01CBCA0324BE /* RSSFeed + Characters Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D29AB4FE293D9F4D61AF32C546C429 /* RSSFeed + Characters Mapper.swift */; };
+		72BED96597E65E313E59B6B4A63B07CA /* RSSFeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9102C19601C42CAC45AC6676F4EB468A /* RSSFeedItem.swift */; };
+		73065F6C5FC4FF6BF5136D2399C59FC0 /* RSSFeedTextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D44F25296E3702E942AC630CDD948 /* RSSFeedTextInput.swift */; };
+		7455E66C3469ABD2CC48F0C7AB5300AC /* AtomFeedEntrySource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4966CFECB8884BB2C9066FC2B86DD3 /* AtomFeedEntrySource.swift */; };
+		7BB01A50DE6BB7E99E04F7420167C1B1 /* RSSFeedItemSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7D43ECBEBD43C743FA366E4E54456D /* RSSFeedItemSource.swift */; };
+		7BFB2829EC5ED2DEBF11AAB561855D04 /* FeedParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B6BD87BE5FDA238AB715261AEC7856 /* FeedParser.swift */; };
+		7EDAF27AB528AA5B9D05E25C9A145266 /* AtomPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD3305AC4F9A127E0B46F6B208F7836 /* AtomPath.swift */; };
+		80E1237D570B1274A8A0A47CE272AB81 /* AtomFeedSubtitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4916E67D7DA94D5C98C0A577086338B4 /* AtomFeedSubtitle.swift */; };
+		814491311F08FAE6C1F70C16B3304868 /* RSSFeedSkipDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D1736534169F458BDAB64CF0178E96 /* RSSFeedSkipDay.swift */; };
+		840516CEA5FB5B2B40167F8E7E494B5B /* AtomFeedEntryContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507A8CA79E1379BCC61A406B67A28563 /* AtomFeedEntryContent.swift */; };
+		842BC67F0613EF5F40C17D3AB678B066 /* RSSFeedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B676B75111FFAFEAB84FD8D2EB93C73 /* RSSFeedImage.swift */; };
+		8AA2F8CC21E8666D19222EE54CB7A2C3 /* FeedKit-watchOS2.0-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E8DD27BF1F9A35FADAC8F5851391AACF /* FeedKit-watchOS2.0-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B167AF83A51121D2F29F11C97B233D2 /* FeedParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B6BD87BE5FDA238AB715261AEC7856 /* FeedParser.swift */; };
+		8E6DC68E09CBBF6A56400F030D57D0CB /* AtomFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58823D1BC2B792E7F9CAFC68DA93747E /* AtomFeed.swift */; };
+		8EFEE394DED2A0D6ACF665F445A69D86 /* AtomFeedLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729B7C0CAE821D88197B62B31EFFCF31 /* AtomFeedLink.swift */; };
+		8F1D2E3DAA681619F93D57D5135E52A8 /* AtomFeed + Characters Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABFD43973157EA8DED23C9BDAE039D2 /* AtomFeed + Characters Mapper.swift */; };
+		9382580B6CCAC13A79DD7744C746E9FC /* AtomFeedContributor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BC4143EB17EFE70E7C5473C8A5F8B7 /* AtomFeedContributor.swift */; };
+		947601AA30A6B8546CDD8F989A4F652E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7752798AED75D2190758A21548AB728 /* Foundation.framework */; };
+		95B7F676C0F32D2A49E8971EF5704DC4 /* RSSFeedCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7BFCD9315AF2AFF8362728B88B4AEC /* RSSFeedCategory.swift */; };
+		96802ECF7E9324CE58CF2AB483B0F86A /* RSSFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E008BCA763A06576F649B14A3D72B7 /* RSSFeed.swift */; };
+		96BF844D92C7731E171C25AC6A45B5BF /* AtomFeedEntryContributor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A61D22A512448B693E11F0052C1DF8 /* AtomFeedEntryContributor.swift */; };
+		9785CDAAD233B8F070511E919ACC26B6 /* AtomFeedEntrySummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169311D9E64D5863078604B879315A26 /* AtomFeedEntrySummary.swift */; };
+		98FDBD0C885D3CBC8A7AAE6CF415EE25 /* RSSFeedTextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D44F25296E3702E942AC630CDD948 /* RSSFeedTextInput.swift */; };
+		9BFB92B979DF355C73B97DCC85C9F3D7 /* RSSFeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9102C19601C42CAC45AC6676F4EB468A /* RSSFeedItem.swift */; };
+		9C165A75D481E76A3B6F9F7FCD01773E /* RSSFeedCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7BFCD9315AF2AFF8362728B88B4AEC /* RSSFeedCategory.swift */; };
+		9D22D25BBDFDF416DBC0198C27C56753 /* AtomPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD3305AC4F9A127E0B46F6B208F7836 /* AtomPath.swift */; };
+		9E1394A647CE00F8F95CAA2073E02C8A /* AtomFeedEntryContributor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A61D22A512448B693E11F0052C1DF8 /* AtomFeedEntryContributor.swift */; };
+		9E14BC9B8DDC786303066005668E3AEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9AE61DEB7F70B8D5B09290911F0E1C8 /* Foundation.framework */; };
+		A0A4CCC66C6B634EFD652EE8A03AF1E3 /* Pods-THMReader WatchKit App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FBD9A0219DC53D6CBB1FC247BD06839 /* Pods-THMReader WatchKit App-dummy.m */; };
+		A843D8B0B4F1C158138D741F2EACE00A /* ContentNamespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903285C91A836C63099125664281FAD6 /* ContentNamespace.swift */; };
+		A85D342A233A5E8BE866D64C98A486B8 /* Pods-THMReader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 779BC784D8EFD8CD5299DC058B7CC085 /* Pods-THMReader-dummy.m */; };
+		A96E309965199506F2A35FA80BD1A0D1 /* DublinCoreNamespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908304BAC6CF6E68121B7939D9AFB914 /* DublinCoreNamespace.swift */; };
+		AA7D9EA3AE1B9B03E197F9C4A18C5DC4 /* AtomFeedEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0BBF3C1B2F01BC6B2886955F5F57F1 /* AtomFeedEntry.swift */; };
+		AD302D580C1614B6FF6CD002877A8D51 /* RFC3339DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9672F68CF6A28DAB952174CCED2F52 /* RFC3339DateFormatter.swift */; };
+		AF8BADF0A26823F8546B0DC0985AA7EB /* RSSFeedSkipDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D1736534169F458BDAB64CF0178E96 /* RSSFeedSkipDay.swift */; };
+		B20E78C0A323064BFF0F2F0C7407C4E6 /* ISO8601DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C8E5E45FB4F70008B3DC99AC5C5EF4 /* ISO8601DateFormatter.swift */; };
+		B4E56787A3FF0C8C10B96A28BBC4221F /* AtomFeedEntrySummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169311D9E64D5863078604B879315A26 /* AtomFeedEntrySummary.swift */; };
+		B613B014A66A372588131163D878072C /* AtomFeedLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729B7C0CAE821D88197B62B31EFFCF31 /* AtomFeedLink.swift */; };
+		B699FB045140E4224A66CE5123587639 /* DublinCoreNamespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908304BAC6CF6E68121B7939D9AFB914 /* DublinCoreNamespace.swift */; };
+		B6CC854D054D4B0E167E5F036D500ACC /* AtomFeedEntryContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507A8CA79E1379BCC61A406B67A28563 /* AtomFeedEntryContent.swift */; };
+		B7CD77E2D257C8CE89A8B3DF1E3E2099 /* AtomFeedEntryAuthor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B784E646B5B55F4A4B513DD9E79CC92 /* AtomFeedEntryAuthor.swift */; };
+		B81258AF777786DA1448CB369044D895 /* DublinCoreNamespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908304BAC6CF6E68121B7939D9AFB914 /* DublinCoreNamespace.swift */; };
+		B8CFB1315B3513CF251546A3E4C384A1 /* FeedParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B6BD87BE5FDA238AB715261AEC7856 /* FeedParser.swift */; };
+		BACA89521F6631D0334FB7AFD42AF664 /* AtomFeedEntryCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7025D41103630584D66E9ED84C9680 /* AtomFeedEntryCategory.swift */; };
+		BE45D0453D93C0FD476275A338B1070B /* SyndicationNamespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EE5698B58107F0D03625EABEFA67B9 /* SyndicationNamespace.swift */; };
+		BEF132004EA01C41F98973DCA695D7ED /* AtomFeedEntryCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7025D41103630584D66E9ED84C9680 /* AtomFeedEntryCategory.swift */; };
+		C0173BFA2BAC87B80CEE499AAF25BFC8 /* SyndicationUpdatePeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E32E068381324150798EC291F18DF92 /* SyndicationUpdatePeriod.swift */; };
+		C291AFA35C57E3773C7D07FE46BD2D20 /* AtomFeedEntryAuthor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B784E646B5B55F4A4B513DD9E79CC92 /* AtomFeedEntryAuthor.swift */; };
+		C3687D835BD0F52C6F38F34EE625AD89 /* AtomPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD3305AC4F9A127E0B46F6B208F7836 /* AtomPath.swift */; };
+		C4B74534E39BCBD745395C4664B9A015 /* AtomFeed + Attributes Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20CE8BC8E19A5BAF250AC005A3048D /* AtomFeed + Attributes Mapper.swift */; };
+		C4F403930E911BEF9CC90A677E4E80BE /* FeedKit-iOS10.0-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B2A1DB30D79C01CE99175ABE21DBCF5 /* FeedKit-iOS10.0-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C5F41BFF55C0E6C7A039D461D6C20C3D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A959CF68E9331057C65BF3A3AC6BB7 /* Result.swift */; };
+		C7A5BE0FCF67FDDF5D68EDE9EC872A1E /* FeedKit-watchOS3.1-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D5606A87957A632F4BAD2D3ACA72310 /* FeedKit-watchOS3.1-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8CB8D48E8C61D986A1B7DD6BEF9DF3E /* ISO8601DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C8E5E45FB4F70008B3DC99AC5C5EF4 /* ISO8601DateFormatter.swift */; };
+		CA4AAACD339602269A7031BC1F650447 /* AtomFeedCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D06F84E6295F839F6965FAF4D3B5BF /* AtomFeedCategory.swift */; };
+		CAE2D8537BD62D3A4F4E19712BA20DEE /* AtomFeedLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729B7C0CAE821D88197B62B31EFFCF31 /* AtomFeedLink.swift */; };
+		CAE8475751B5D512CC701720106227BA /* Pods-THMReader WatchKit Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2631013997DAD37070FDFC0244FC87 /* Pods-THMReader WatchKit Extension-dummy.m */; };
+		CD0DAB1AAAD1BE08A8B4B263ADA03925 /* RSSFeedSkipHour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BC2904752C43392293AEA2B40E744B /* RSSFeedSkipHour.swift */; };
+		CF3DE1A42184A8455FB09A9F4F703B39 /* SyndicationUpdatePeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E32E068381324150798EC291F18DF92 /* SyndicationUpdatePeriod.swift */; };
+		D05FD7778D68FA3473FEB65D8195C415 /* RSSFeedItemGUID.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFC0D911D42B23DA1D29C79CF7EE493 /* RSSFeedItemGUID.swift */; };
+		D1BC789429763CAA1BB73742183825EF /* AtomFeedEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0BBF3C1B2F01BC6B2886955F5F57F1 /* AtomFeedEntry.swift */; };
+		D33F0D83935BED59507E3BD4A5BA9D57 /* AtomFeedAuthor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3472592007126B8AD32440C5EDE4E4 /* AtomFeedAuthor.swift */; };
+		D4C5B15448D1C3ED439ACB6D6B875888 /* AtomFeedCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D06F84E6295F839F6965FAF4D3B5BF /* AtomFeedCategory.swift */; };
+		DAF94D7928473B6D790A71EAD30AE9AE /* RSSFeedItemGUID.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFC0D911D42B23DA1D29C79CF7EE493 /* RSSFeedItemGUID.swift */; };
+		DE1D4FC313ACC5E3E84E41C0302D9256 /* AtomFeedCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D06F84E6295F839F6965FAF4D3B5BF /* AtomFeedCategory.swift */; };
+		E2C0835BCAA5F25CAFFC224FD823F5B5 /* RSSFeed + Characters Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D29AB4FE293D9F4D61AF32C546C429 /* RSSFeed + Characters Mapper.swift */; };
+		E3E53C72747D4086AC0379958BA01E1F /* RSSFeedSkipHour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BC2904752C43392293AEA2B40E744B /* RSSFeedSkipHour.swift */; };
+		E5B6456A0E07EC3F8073A8E546BCC420 /* AtomFeedSubtitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4916E67D7DA94D5C98C0A577086338B4 /* AtomFeedSubtitle.swift */; };
+		E82FC9291AE8F9F6D7263A1D3F278A1B /* RSSFeedCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A631505D1A53DB5FF4258529E18B6D1 /* RSSFeedCloud.swift */; };
+		E86CC647BF1B0046B038287A83F92B01 /* RSSFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E008BCA763A06576F649B14A3D72B7 /* RSSFeed.swift */; };
+		E9B4CEFC684703ECAF1879BEFC3C6BEE /* String + bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8C1216B7ADD486D2BBA24E692756C2 /* String + bool.swift */; };
+		EA6AF038754BE23103FF8B03CE42348B /* AtomFeedEntrySummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169311D9E64D5863078604B879315A26 /* AtomFeedEntrySummary.swift */; };
+		ECE57DCFA135BF27CE63313331002924 /* FeedType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157484178EFFE922E4B23AE1B3B072BC /* FeedType.swift */; };
+		ED449C70748762B2820D6A19618A98BC /* ContentNamespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903285C91A836C63099125664281FAD6 /* ContentNamespace.swift */; };
+		EF04E42C19B91D72850874348C7E9093 /* String + dateFromSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131CC1874357E08582F5EB147A6D7A3E /* String + dateFromSpec.swift */; };
+		F036D5FCBB23F3EE9BB722C69234582B /* AtomFeedGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FF2AD19459025C1FD6CB070EAC377C /* AtomFeedGenerator.swift */; };
+		F0BB1760915B3E592EAE179760B8CB80 /* RSSFeed + Attributes Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3294240B729E56FB0D0806ACFAB6391A /* RSSFeed + Attributes Mapper.swift */; };
+		F117856BF54B116F2E77F2337CC5DB42 /* String + dateFromSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131CC1874357E08582F5EB147A6D7A3E /* String + dateFromSpec.swift */; };
+		F14E224A73B13DC2AE6EF6911B3F1548 /* RSSFeedItemGUID.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFC0D911D42B23DA1D29C79CF7EE493 /* RSSFeedItemGUID.swift */; };
+		F256052F2FA1B2E660441830866EBE01 /* Pods-THMReader WatchKit App-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BA4904F598A480464971DE9375B315C /* Pods-THMReader WatchKit App-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F39FCDFD34CBEB81CC65B14A7D13857F /* RSSFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E008BCA763A06576F649B14A3D72B7 /* RSSFeed.swift */; };
+		F3FB0D7276C145F6EB22EE7CBD2B52C3 /* SyndicationNamespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EE5698B58107F0D03625EABEFA67B9 /* SyndicationNamespace.swift */; };
+		F4591C29F65F0B0442A95C31F6B966B0 /* RSSFeedItemCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4DCF3AEF69E2B091415FCDB3AB2AF8 /* RSSFeedItemCategory.swift */; };
+		F58FEC8B31B55F72D1A8B0E87D26EDBD /* AtomFeedEntryLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F9EE1EC1B84874BCAA435E2A7BFBDA /* AtomFeedEntryLink.swift */; };
+		F66E7C403131DDBE34151B3F66D6C28E /* String + bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8C1216B7ADD486D2BBA24E692756C2 /* String + bool.swift */; };
+		F972749FA5FE0841BE3954FB195F1B82 /* String + bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8C1216B7ADD486D2BBA24E692756C2 /* String + bool.swift */; };
+		F9FA2030793D3B26B3382B77B247CAA1 /* AtomFeedEntryAuthor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B784E646B5B55F4A4B513DD9E79CC92 /* AtomFeedEntryAuthor.swift */; };
+		FEC3D30213081CF6F06988D43ABDB281 /* ParserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E660C2300F3F325ECE860C680A6063 /* ParserError.swift */; };
+		FFDB63D381D5C10E6371E1EB6C9283EB /* RFC3339DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9672F68CF6A28DAB952174CCED2F52 /* RFC3339DateFormatter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4D1077600A6E41D79A2EAEC142A42A25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D9901D63DFA7F42CAF325CCFE912B2D;
+			remoteInfo = "FeedKit-iOS10.0";
+		};
+		9290A8A1EE23E1A633B0790DBF6C52F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA26CFE9F1955E1361614C07C92E1659;
+			remoteInfo = "FeedKit-watchOS3.1";
+		};
+		CDC9C0E2B87AB7DF6621AF5A2FC39588 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7133BBCE84533FD4D02F54B8F0F0923B;
+			remoteInfo = "FeedKit-watchOS2.0";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02D1736534169F458BDAB64CF0178E96 /* RSSFeedSkipDay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSFeedSkipDay.swift; path = Sources/Model/RSS/RSSFeedSkipDay.swift; sourceTree = "<group>"; };
+		039D44F25296E3702E942AC630CDD948 /* RSSFeedTextInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSFeedTextInput.swift; path = Sources/Model/RSS/RSSFeedTextInput.swift; sourceTree = "<group>"; };
+		03E9047906D40186143CEC01C6A79BCB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../FeedKit-watchOS2.0/Info.plist"; sourceTree = "<group>"; };
+		0A631505D1A53DB5FF4258529E18B6D1 /* RSSFeedCloud.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSFeedCloud.swift; path = Sources/Model/RSS/RSSFeedCloud.swift; sourceTree = "<group>"; };
+		0A64BBEA4B7E793B87B79ADFE44739C8 /* Pods-THMReader-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-THMReader-frameworks.sh"; sourceTree = "<group>"; };
+		0AC94FA5CDDDCDBB466DF28A923BDE04 /* RSSFeedItemEnclosure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSFeedItemEnclosure.swift; path = Sources/Model/RSS/RSSFeedItemEnclosure.swift; sourceTree = "<group>"; };
+		11E660C2300F3F325ECE860C680A6063 /* ParserError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParserError.swift; path = Sources/Core/ParserError.swift; sourceTree = "<group>"; };
+		131CC1874357E08582F5EB147A6D7A3E /* String + dateFromSpec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String + dateFromSpec.swift"; path = "Sources/Extensions/String + dateFromSpec.swift"; sourceTree = "<group>"; };
+		157484178EFFE922E4B23AE1B3B072BC /* FeedType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FeedType.swift; path = Sources/Core/FeedType.swift; sourceTree = "<group>"; };
+		169311D9E64D5863078604B879315A26 /* AtomFeedEntrySummary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AtomFeedEntrySummary.swift; path = Sources/Model/Atom/AtomFeedEntrySummary.swift; sourceTree = "<group>"; };
+		1B784E646B5B55F4A4B513DD9E79CC92 /* AtomFeedEntryAuthor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AtomFeedEntryAuthor.swift; path = Sources/Model/Atom/AtomFeedEntryAuthor.swift; sourceTree = "<group>"; };
+		1BEAE4D1C183BF4C94941CF2DE2F1D08 /* FeedKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FeedKit.framework; path = "FeedKit-watchOS3.1.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FBD9A0219DC53D6CBB1FC247BD06839 /* Pods-THMReader WatchKit App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-THMReader WatchKit App-dummy.m"; sourceTree = "<group>"; };
+		2A7025D41103630584D66E9ED84C9680 /* AtomFeedEntryCategory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AtomFeedEntryCategory.swift; path = Sources/Model/Atom/AtomFeedEntryCategory.swift; sourceTree = "<group>"; };
+		2D7D43ECBEBD43C743FA366E4E54456D /* RSSFeedItemSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSFeedItemSource.swift; path = Sources/Model/RSS/RSSFeedItemSource.swift; sourceTree = "<group>"; };
+		31407B21C4E1C25D494FF2232E4571E6 /* Pods_THMReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_THMReader.framework; path = "Pods-THMReader.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3294240B729E56FB0D0806ACFAB6391A /* RSSFeed + Attributes Mapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "RSSFeed + Attributes Mapper.swift"; path = "Sources/Model/RSS/Mappers/RSSFeed + Attributes Mapper.swift"; sourceTree = "<group>"; };
+		3B0BBF3C1B2F01BC6B2886955F5F57F1 /* AtomFeedEntry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AtomFeedEntry.swift; path = Sources/Model/Atom/AtomFeedEntry.swift; sourceTree = "<group>"; };
+		3D5606A87957A632F4BAD2D3ACA72310 /* FeedKit-watchOS3.1-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FeedKit-watchOS3.1-umbrella.h"; path = "../FeedKit-watchOS3.1/FeedKit-watchOS3.1-umbrella.h"; sourceTree = "<group>"; };
+		3E250420F31E2AD5811B9E098DFAD75A /* FeedKit-watchOS3.1-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FeedKit-watchOS3.1-dummy.m"; path = "../FeedKit-watchOS3.1/FeedKit-watchOS3.1-dummy.m"; sourceTree = "<group>"; };
+		3FBA0DC890F1F74FFDC331FFA34993DD /* Pods-THMReader WatchKit Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-THMReader WatchKit Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4222B7C3BA2C3C56C2C29D1F78D5E50E /* Pods-THMReader WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-THMReader WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		4279A6E6F0EA564E3200EE29589ACE0B /* FeedKit-watchOS3.1-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FeedKit-watchOS3.1-prefix.pch"; path = "../FeedKit-watchOS3.1/FeedKit-watchOS3.1-prefix.pch"; sourceTree = "<group>"; };
+		450E2D5C14A4F05B504982A0F6F03F2B /* Pods_THMReader_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_THMReader_WatchKit_App.framework; path = "Pods-THMReader WatchKit App.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4916E67D7DA94D5C98C0A577086338B4 /* AtomFeedSubtitle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AtomFeedSubtitle.swift; path = Sources/Model/Atom/AtomFeedSubtitle.swift; sourceTree = "<group>"; };
+		4A4DCF3AEF69E2B091415FCDB3AB2AF8 /* RSSFeedItemCategory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSFeedItemCategory.swift; path = Sources/Model/RSS/RSSFeedItemCategory.swift; sourceTree = "<group>"; };
+		507A8CA79E1379BCC61A406B67A28563 /* AtomFeedEntryContent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AtomFeedEntryContent.swift; path = Sources/Model/Atom/AtomFeedEntryContent.swift; sourceTree = "<group>"; };
+		50A61D22A512448B693E11F0052C1DF8 /* AtomFeedEntryContributor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AtomFeedEntryContributor.swift; path = Sources/Model/Atom/AtomFeedEntryContributor.swift; sourceTree = "<group>"; };
+		5497777A49A85578313F9C64BC0AF691 /* FeedKit-watchOS2.0.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "FeedKit-watchOS2.0.xcconfig"; path = "../FeedKit-watchOS2.0/FeedKit-watchOS2.0.xcconfig"; sourceTree = "<group>"; };
+		56A959CF68E9331057C65BF3A3AC6BB7 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Sources/Core/Result.swift; sourceTree = "<group>"; };
+		57E0701F2507FCAAF54FD86F2E3D4F06 /* Pods-THMReader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-THMReader.modulemap"; sourceTree = "<group>"; };
+		58203267F0408126A84D2D7757215713 /* FeedKit-watchOS3.1.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; name = "FeedKit-watchOS3.1.modulemap"; path = "../FeedKit-watchOS3.1/FeedKit-watchOS3.1.modulemap"; sourceTree = "<group>"; };
+		58823D1BC2B792E7F9CAFC68DA93747E /* AtomFeed.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AtomFeed.swift; path = Sources/Model/Atom/AtomFeed.swift; sourceTree = "<group>"; };
+		5A9198CEFFD4CD587BAC066AFA6B80E6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B2A1DB30D79C01CE99175ABE21DBCF5 /* FeedKit-iOS10.0-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FeedKit-iOS10.0-umbrella.h"; sourceTree = "<group>"; };
+		5BA4904F598A480464971DE9375B315C /* Pods-THMReader WatchKit App-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-THMReader WatchKit App-umbrella.h"; sourceTree = "<group>"; };
+		5FAE0EB0704CB029E64B5FCCD7F7150A /* Pods-THMReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-THMReader.release.xcconfig"; sourceTree = "<group>"; };
+		6128FEE0F9FA56BC6B87C67452A44AC8 /* Pods-THMReader WatchKit App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-THMReader WatchKit App-acknowledgements.markdown"; sourceTree = "<group>"; };
+		65FF0118531FACDF099CB4B5281AED01 /* Pods-THMReader WatchKit App.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-THMReader WatchKit App.modulemap"; sourceTree = "<group>"; };
+		66BB635D5177D44B0EEA5C5D20C0ECFC /* Pods-THMReader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-THMReader-umbrella.h"; sourceTree = "<group>"; };
+		6B676B75111FFAFEAB84FD8D2EB93C73 /* RSSFeedImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSFeedImage.swift; path = Sources/Model/RSS/RSSFeedImage.swift; sourceTree = "<group>"; };
+		6E32E068381324150798EC291F18DF92 /* SyndicationUpdatePeriod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SyndicationUpdatePeriod.swift; path = Sources/Model/RSS/Modules/Syndication/SyndicationUpdatePeriod.swift; sourceTree = "<group>"; };
+		729B7C0CAE821D88197B62B31EFFCF31 /* AtomFeedLink.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AtomFeedLink.swift; path = Sources/Model/Atom/AtomFeedLink.swift; sourceTree = "<group>"; };
+		72C8E5E45FB4F70008B3DC99AC5C5EF4 /* ISO8601DateFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ISO8601DateFormatter.swift; path = Sources/Dates/ISO8601DateFormatter.swift; sourceTree = "<group>"; };
+		74766B9B2324DA8B06F2F1612C8299E4 /* Pods-THMReader-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-THMReader-resources.sh"; sourceTree = "<group>"; };
+		779BC784D8EFD8CD5299DC058B7CC085 /* Pods-THMReader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-THMReader-dummy.m"; sourceTree = "<group>"; };
+		7ABFD43973157EA8DED23C9BDAE039D2 /* AtomFeed + Characters Mapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AtomFeed + Characters Mapper.swift"; path = "Sources/Model/Atom/Mappers/AtomFeed + Characters Mapper.swift"; sourceTree = "<group>"; };
+		7B4966CFECB8884BB2C9066FC2B86DD3 /* AtomFeedEntrySource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AtomFeedEntrySource.swift; path = Sources/Model/Atom/AtomFeedEntrySource.swift; sourceTree = "<group>"; };
+		806A1EADBBEF8DCC1DBCB744328AD6B7 /* FeedKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FeedKit.framework; path = "FeedKit-watchOS2.0.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80B8D8BDB12F715E2521E715F6901293 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80FF2AD19459025C1FD6CB070EAC377C /* AtomFeedGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AtomFeedGenerator.swift; path = Sources/Model/Atom/AtomFeedGenerator.swift; sourceTree = "<group>"; };
+		82BC2904752C43392293AEA2B40E744B /* RSSFeedSkipHour.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSFeedSkipHour.swift; path = Sources/Model/RSS/RSSFeedSkipHour.swift; sourceTree = "<group>"; };
+		83D29AB4FE293D9F4D61AF32C546C429 /* RSSFeed + Characters Mapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "RSSFeed + Characters Mapper.swift"; path = "Sources/Model/RSS/Mappers/RSSFeed + Characters Mapper.swift"; sourceTree = "<group>"; };
+		855B3BE087597258DDB8E823954F1301 /* Pods-THMReader WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-THMReader WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		86F02DA4E8995EDD6ECBB255FA63A195 /* Pods-THMReader WatchKit Extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-THMReader WatchKit Extension-umbrella.h"; sourceTree = "<group>"; };
+		870D36F95C6F6ED8A221F7D72D3D5D4B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89523B7B52E71587B27D4A6027C3C109 /* Pods-THMReader WatchKit Extension-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-THMReader WatchKit Extension-resources.sh"; sourceTree = "<group>"; };
+		89851FDE3C5F596A2F219E77E23E05BB /* FeedKit-iOS10.0-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FeedKit-iOS10.0-prefix.pch"; sourceTree = "<group>"; };
+		8B510AA1D999D662A5FC1AA30C0BD78D /* Pods-THMReader WatchKit App-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-THMReader WatchKit App-frameworks.sh"; sourceTree = "<group>"; };
+		8E7BFCD9315AF2AFF8362728B88B4AEC /* RSSFeedCategory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSFeedCategory.swift; path = Sources/Model/RSS/RSSFeedCategory.swift; sourceTree = "<group>"; };
+		8F3472592007126B8AD32440C5EDE4E4 /* AtomFeedAuthor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AtomFeedAuthor.swift; path = Sources/Model/Atom/AtomFeedAuthor.swift; sourceTree = "<group>"; };
+		8FE3C654AFD3391E7D2249943DE9C439 /* FeedKit-watchOS2.0-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FeedKit-watchOS2.0-prefix.pch"; path = "../FeedKit-watchOS2.0/FeedKit-watchOS2.0-prefix.pch"; sourceTree = "<group>"; };
+		903285C91A836C63099125664281FAD6 /* ContentNamespace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContentNamespace.swift; path = Sources/Model/RSS/Modules/Content/ContentNamespace.swift; sourceTree = "<group>"; };
+		908304BAC6CF6E68121B7939D9AFB914 /* DublinCoreNamespace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DublinCoreNamespace.swift; path = "Sources/Model/RSS/Modules/Dublin Core/DublinCoreNamespace.swift"; sourceTree = "<group>"; };
+		9102C19601C42CAC45AC6676F4EB468A /* RSSFeedItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSFeedItem.swift; path = Sources/Model/RSS/RSSFeedItem.swift; sourceTree = "<group>"; };
+		918D4A3C0E4FB1529F187BD0D2C03650 /* FeedKit-watchOS2.0-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FeedKit-watchOS2.0-dummy.m"; path = "../FeedKit-watchOS2.0/FeedKit-watchOS2.0-dummy.m"; sourceTree = "<group>"; };
+		933148AB75BD6BC0FABC4F7BFFFAEF0A /* Pods-THMReader WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-THMReader WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93BC4143EB17EFE70E7C5473C8A5F8B7 /* AtomFeedContributor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AtomFeedContributor.swift; path = Sources/Model/Atom/AtomFeedContributor.swift; sourceTree = "<group>"; };
+		94D06F84E6295F839F6965FAF4D3B5BF /* AtomFeedCategory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AtomFeedCategory.swift; path = Sources/Model/Atom/AtomFeedCategory.swift; sourceTree = "<group>"; };
+		95B6BD87BE5FDA238AB715261AEC7856 /* FeedParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FeedParser.swift; path = Sources/Core/FeedParser.swift; sourceTree = "<group>"; };
+		96FE1D006CA6DA80386FD5740F7DA525 /* RSSPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSPath.swift; path = Sources/Model/RSS/RSSPath.swift; sourceTree = "<group>"; };
+		9BDBCF7221CE6C9F7235319803749D0C /* FeedKit-iOS10.0.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "FeedKit-iOS10.0.xcconfig"; sourceTree = "<group>"; };
+		A068AB64EC0F0EBED421ABAD281CFF6F /* Pods_THMReader_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_THMReader_WatchKit_Extension.framework; path = "Pods-THMReader WatchKit Extension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7752798AED75D2190758A21548AB728 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		B93413773614BBC5E8C22524302BF065 /* FeedKit-iOS10.0.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "FeedKit-iOS10.0.modulemap"; sourceTree = "<group>"; };
+		BFAD412849C5AD2BFEB281904D020DB5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../FeedKit-watchOS3.1/Info.plist"; sourceTree = "<group>"; };
+		C193C8AF76EA9FB09E24EB2B6777AFD4 /* Pods-THMReader-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-THMReader-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C2F9EE1EC1B84874BCAA435E2A7BFBDA /* AtomFeedEntryLink.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AtomFeedEntryLink.swift; path = Sources/Model/Atom/AtomFeedEntryLink.swift; sourceTree = "<group>"; };
+		C54B32575EAC9204B9E92BA766681756 /* Pods-THMReader WatchKit App-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-THMReader WatchKit App-resources.sh"; sourceTree = "<group>"; };
+		C56D760AD9F910C29CB8A9FCF596CAE0 /* FeedKit-watchOS3.1.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "FeedKit-watchOS3.1.xcconfig"; path = "../FeedKit-watchOS3.1/FeedKit-watchOS3.1.xcconfig"; sourceTree = "<group>"; };
+		C8DFDF5C36FFB22D172231FE1AD7319F /* Pods-THMReader WatchKit Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-THMReader WatchKit Extension.modulemap"; sourceTree = "<group>"; };
+		C9EB9FD04886702DEA04055285950CD7 /* Pods-THMReader WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-THMReader WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		CBD3305AC4F9A127E0B46F6B208F7836 /* AtomPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AtomPath.swift; path = Sources/Model/Atom/AtomPath.swift; sourceTree = "<group>"; };
+		CCE69A1E8D852EC43BB925BEF40EF348 /* Pods-THMReader WatchKit Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-THMReader WatchKit Extension-acknowledgements.plist"; sourceTree = "<group>"; };
+		CE20CE8BC8E19A5BAF250AC005A3048D /* AtomFeed + Attributes Mapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AtomFeed + Attributes Mapper.swift"; path = "Sources/Model/Atom/Mappers/AtomFeed + Attributes Mapper.swift"; sourceTree = "<group>"; };
+		CFF9F4D635FEA1806321C1DA765A3346 /* FeedKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FeedKit.framework; path = "FeedKit-iOS10.0.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2CCBEC4EA7D4A640693860727C9B2E7 /* Parser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parser.swift; path = Sources/Core/Parser.swift; sourceTree = "<group>"; };
+		D7BBA5007E210399A2D832BAA5393621 /* DateSpec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateSpec.swift; path = Sources/Dates/DateSpec.swift; sourceTree = "<group>"; };
+		DD2631013997DAD37070FDFC0244FC87 /* Pods-THMReader WatchKit Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-THMReader WatchKit Extension-dummy.m"; sourceTree = "<group>"; };
+		E0088C8F82615BDD5A06D24F5083C1E4 /* Pods-THMReader WatchKit App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-THMReader WatchKit App-acknowledgements.plist"; sourceTree = "<group>"; };
+		E156FD19112A1680A8075750F0C7E565 /* Pods-THMReader WatchKit Extension-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-THMReader WatchKit Extension-frameworks.sh"; sourceTree = "<group>"; };
+		E26681E4E7F0E8E400CD39C0A069CEFC /* RFC822DateFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RFC822DateFormatter.swift; path = Sources/Dates/RFC822DateFormatter.swift; sourceTree = "<group>"; };
+		E535DB624B634CB4AC47FD61F76BDC59 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5FD0037C362125EBFD7D67062A92B37 /* Pods-THMReader-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-THMReader-acknowledgements.plist"; sourceTree = "<group>"; };
+		E8DD27BF1F9A35FADAC8F5851391AACF /* FeedKit-watchOS2.0-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FeedKit-watchOS2.0-umbrella.h"; path = "../FeedKit-watchOS2.0/FeedKit-watchOS2.0-umbrella.h"; sourceTree = "<group>"; };
+		E8EE5698B58107F0D03625EABEFA67B9 /* SyndicationNamespace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SyndicationNamespace.swift; path = Sources/Model/RSS/Modules/Syndication/SyndicationNamespace.swift; sourceTree = "<group>"; };
+		EE7C1559D31FBA3A14F24928EF2FD353 /* Pods-THMReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-THMReader.debug.xcconfig"; sourceTree = "<group>"; };
+		F05F4F510486034E03DE4DCE4368DEAF /* FeedKit-watchOS2.0.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; name = "FeedKit-watchOS2.0.modulemap"; path = "../FeedKit-watchOS2.0/FeedKit-watchOS2.0.modulemap"; sourceTree = "<group>"; };
+		F0E008BCA763A06576F649B14A3D72B7 /* RSSFeed.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSFeed.swift; path = Sources/Model/RSS/RSSFeed.swift; sourceTree = "<group>"; };
+		F421BC7005BE2FB42336F805121FE88F /* FeedKit-iOS10.0-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FeedKit-iOS10.0-dummy.m"; sourceTree = "<group>"; };
+		F9AE61DEB7F70B8D5B09290911F0E1C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		FC8C1216B7ADD486D2BBA24E692756C2 /* String + bool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String + bool.swift"; path = "Sources/Extensions/String + bool.swift"; sourceTree = "<group>"; };
+		FCFC0D911D42B23DA1D29C79CF7EE493 /* RSSFeedItemGUID.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSFeedItemGUID.swift; path = Sources/Model/RSS/RSSFeedItemGUID.swift; sourceTree = "<group>"; };
+		FD9672F68CF6A28DAB952174CCED2F52 /* RFC3339DateFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RFC3339DateFormatter.swift; path = Sources/Dates/RFC3339DateFormatter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		71A5A924717BCA52393D25795EFACEC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CB6A38749775AD273FFCDBAE5CDEDC4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83A66A77B79E40FC4C3D5D366FA3A6BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15BBFB2F41B4B6A17D7B37483E97FF0A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3D094956524BCA6A7C241CD231961BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0994FE4899EB14B6DC58A127196F3997 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6C55A3E269FDA68D5FE9644E5EAAC3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				947601AA30A6B8546CDD8F989A4F652E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF20A67C3F8C739D64C504590A439CF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E14BC9B8DDC786303066005668E3AEC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F25AD3C526C87ED2277C86E5F1C1281C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42F4557EFA3B318C1FB45B0B29D34F78 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44F6631237C1114B88EAC2C213430916 /* Pods-THMReader WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E535DB624B634CB4AC47FD61F76BDC59 /* Info.plist */,
+				C8DFDF5C36FFB22D172231FE1AD7319F /* Pods-THMReader WatchKit Extension.modulemap */,
+				3FBA0DC890F1F74FFDC331FFA34993DD /* Pods-THMReader WatchKit Extension-acknowledgements.markdown */,
+				CCE69A1E8D852EC43BB925BEF40EF348 /* Pods-THMReader WatchKit Extension-acknowledgements.plist */,
+				DD2631013997DAD37070FDFC0244FC87 /* Pods-THMReader WatchKit Extension-dummy.m */,
+				E156FD19112A1680A8075750F0C7E565 /* Pods-THMReader WatchKit Extension-frameworks.sh */,
+				89523B7B52E71587B27D4A6027C3C109 /* Pods-THMReader WatchKit Extension-resources.sh */,
+				86F02DA4E8995EDD6ECBB255FA63A195 /* Pods-THMReader WatchKit Extension-umbrella.h */,
+				933148AB75BD6BC0FABC4F7BFFFAEF0A /* Pods-THMReader WatchKit Extension.debug.xcconfig */,
+				855B3BE087597258DDB8E823954F1301 /* Pods-THMReader WatchKit Extension.release.xcconfig */,
+			);
+			name = "Pods-THMReader WatchKit Extension";
+			path = "Target Support Files/Pods-THMReader WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		493B5B5D7619E3D58F27AB6089DA8C7B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B93413773614BBC5E8C22524302BF065 /* FeedKit-iOS10.0.modulemap */,
+				9BDBCF7221CE6C9F7235319803749D0C /* FeedKit-iOS10.0.xcconfig */,
+				F421BC7005BE2FB42336F805121FE88F /* FeedKit-iOS10.0-dummy.m */,
+				89851FDE3C5F596A2F219E77E23E05BB /* FeedKit-iOS10.0-prefix.pch */,
+				5B2A1DB30D79C01CE99175ABE21DBCF5 /* FeedKit-iOS10.0-umbrella.h */,
+				F05F4F510486034E03DE4DCE4368DEAF /* FeedKit-watchOS2.0.modulemap */,
+				5497777A49A85578313F9C64BC0AF691 /* FeedKit-watchOS2.0.xcconfig */,
+				918D4A3C0E4FB1529F187BD0D2C03650 /* FeedKit-watchOS2.0-dummy.m */,
+				8FE3C654AFD3391E7D2249943DE9C439 /* FeedKit-watchOS2.0-prefix.pch */,
+				E8DD27BF1F9A35FADAC8F5851391AACF /* FeedKit-watchOS2.0-umbrella.h */,
+				58203267F0408126A84D2D7757215713 /* FeedKit-watchOS3.1.modulemap */,
+				C56D760AD9F910C29CB8A9FCF596CAE0 /* FeedKit-watchOS3.1.xcconfig */,
+				3E250420F31E2AD5811B9E098DFAD75A /* FeedKit-watchOS3.1-dummy.m */,
+				4279A6E6F0EA564E3200EE29589ACE0B /* FeedKit-watchOS3.1-prefix.pch */,
+				3D5606A87957A632F4BAD2D3ACA72310 /* FeedKit-watchOS3.1-umbrella.h */,
+				BFAD412849C5AD2BFEB281904D020DB5 /* Info.plist */,
+				5A9198CEFFD4CD587BAC066AFA6B80E6 /* Info.plist */,
+				03E9047906D40186143CEC01C6A79BCB /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FeedKit-iOS10.0";
+			sourceTree = "<group>";
+		};
+		692FB0135C707D912D446A1B7760CC02 /* Pods-THMReader WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				870D36F95C6F6ED8A221F7D72D3D5D4B /* Info.plist */,
+				65FF0118531FACDF099CB4B5281AED01 /* Pods-THMReader WatchKit App.modulemap */,
+				6128FEE0F9FA56BC6B87C67452A44AC8 /* Pods-THMReader WatchKit App-acknowledgements.markdown */,
+				E0088C8F82615BDD5A06D24F5083C1E4 /* Pods-THMReader WatchKit App-acknowledgements.plist */,
+				1FBD9A0219DC53D6CBB1FC247BD06839 /* Pods-THMReader WatchKit App-dummy.m */,
+				8B510AA1D999D662A5FC1AA30C0BD78D /* Pods-THMReader WatchKit App-frameworks.sh */,
+				C54B32575EAC9204B9E92BA766681756 /* Pods-THMReader WatchKit App-resources.sh */,
+				5BA4904F598A480464971DE9375B315C /* Pods-THMReader WatchKit App-umbrella.h */,
+				C9EB9FD04886702DEA04055285950CD7 /* Pods-THMReader WatchKit App.debug.xcconfig */,
+				4222B7C3BA2C3C56C2C29D1F78D5E50E /* Pods-THMReader WatchKit App.release.xcconfig */,
+			);
+			name = "Pods-THMReader WatchKit App";
+			path = "Target Support Files/Pods-THMReader WatchKit App";
+			sourceTree = "<group>";
+		};
+		724CDAFB81C91D8A69EE2274B01F6EAB /* FeedKit */ = {
+			isa = PBXGroup;
+			children = (
+				58823D1BC2B792E7F9CAFC68DA93747E /* AtomFeed.swift */,
+				CE20CE8BC8E19A5BAF250AC005A3048D /* AtomFeed + Attributes Mapper.swift */,
+				7ABFD43973157EA8DED23C9BDAE039D2 /* AtomFeed + Characters Mapper.swift */,
+				8F3472592007126B8AD32440C5EDE4E4 /* AtomFeedAuthor.swift */,
+				94D06F84E6295F839F6965FAF4D3B5BF /* AtomFeedCategory.swift */,
+				93BC4143EB17EFE70E7C5473C8A5F8B7 /* AtomFeedContributor.swift */,
+				3B0BBF3C1B2F01BC6B2886955F5F57F1 /* AtomFeedEntry.swift */,
+				1B784E646B5B55F4A4B513DD9E79CC92 /* AtomFeedEntryAuthor.swift */,
+				2A7025D41103630584D66E9ED84C9680 /* AtomFeedEntryCategory.swift */,
+				507A8CA79E1379BCC61A406B67A28563 /* AtomFeedEntryContent.swift */,
+				50A61D22A512448B693E11F0052C1DF8 /* AtomFeedEntryContributor.swift */,
+				C2F9EE1EC1B84874BCAA435E2A7BFBDA /* AtomFeedEntryLink.swift */,
+				7B4966CFECB8884BB2C9066FC2B86DD3 /* AtomFeedEntrySource.swift */,
+				169311D9E64D5863078604B879315A26 /* AtomFeedEntrySummary.swift */,
+				80FF2AD19459025C1FD6CB070EAC377C /* AtomFeedGenerator.swift */,
+				729B7C0CAE821D88197B62B31EFFCF31 /* AtomFeedLink.swift */,
+				4916E67D7DA94D5C98C0A577086338B4 /* AtomFeedSubtitle.swift */,
+				CBD3305AC4F9A127E0B46F6B208F7836 /* AtomPath.swift */,
+				903285C91A836C63099125664281FAD6 /* ContentNamespace.swift */,
+				D7BBA5007E210399A2D832BAA5393621 /* DateSpec.swift */,
+				908304BAC6CF6E68121B7939D9AFB914 /* DublinCoreNamespace.swift */,
+				95B6BD87BE5FDA238AB715261AEC7856 /* FeedParser.swift */,
+				157484178EFFE922E4B23AE1B3B072BC /* FeedType.swift */,
+				72C8E5E45FB4F70008B3DC99AC5C5EF4 /* ISO8601DateFormatter.swift */,
+				D2CCBEC4EA7D4A640693860727C9B2E7 /* Parser.swift */,
+				11E660C2300F3F325ECE860C680A6063 /* ParserError.swift */,
+				56A959CF68E9331057C65BF3A3AC6BB7 /* Result.swift */,
+				FD9672F68CF6A28DAB952174CCED2F52 /* RFC3339DateFormatter.swift */,
+				E26681E4E7F0E8E400CD39C0A069CEFC /* RFC822DateFormatter.swift */,
+				F0E008BCA763A06576F649B14A3D72B7 /* RSSFeed.swift */,
+				3294240B729E56FB0D0806ACFAB6391A /* RSSFeed + Attributes Mapper.swift */,
+				83D29AB4FE293D9F4D61AF32C546C429 /* RSSFeed + Characters Mapper.swift */,
+				8E7BFCD9315AF2AFF8362728B88B4AEC /* RSSFeedCategory.swift */,
+				0A631505D1A53DB5FF4258529E18B6D1 /* RSSFeedCloud.swift */,
+				6B676B75111FFAFEAB84FD8D2EB93C73 /* RSSFeedImage.swift */,
+				9102C19601C42CAC45AC6676F4EB468A /* RSSFeedItem.swift */,
+				4A4DCF3AEF69E2B091415FCDB3AB2AF8 /* RSSFeedItemCategory.swift */,
+				0AC94FA5CDDDCDBB466DF28A923BDE04 /* RSSFeedItemEnclosure.swift */,
+				FCFC0D911D42B23DA1D29C79CF7EE493 /* RSSFeedItemGUID.swift */,
+				2D7D43ECBEBD43C743FA366E4E54456D /* RSSFeedItemSource.swift */,
+				02D1736534169F458BDAB64CF0178E96 /* RSSFeedSkipDay.swift */,
+				82BC2904752C43392293AEA2B40E744B /* RSSFeedSkipHour.swift */,
+				039D44F25296E3702E942AC630CDD948 /* RSSFeedTextInput.swift */,
+				96FE1D006CA6DA80386FD5740F7DA525 /* RSSPath.swift */,
+				FC8C1216B7ADD486D2BBA24E692756C2 /* String + bool.swift */,
+				131CC1874357E08582F5EB147A6D7A3E /* String + dateFromSpec.swift */,
+				E8EE5698B58107F0D03625EABEFA67B9 /* SyndicationNamespace.swift */,
+				6E32E068381324150798EC291F18DF92 /* SyndicationUpdatePeriod.swift */,
+				493B5B5D7619E3D58F27AB6089DA8C7B /* Support Files */,
+			);
+			name = FeedKit;
+			path = FeedKit;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				8F91EE078EA3977443D1BDC2601132EF /* Frameworks */,
+				D87C2D0654A8B93DEFE173A0C7550EB2 /* Pods */,
+				C7F83A54982B7B74A158C913EF2F4298 /* Products */,
+				BBA232293EA56B90958806FB46C96F65 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		872AC1DDAB85DD6AEEA48C3D09F8107C /* Pods-THMReader */ = {
+			isa = PBXGroup;
+			children = (
+				80B8D8BDB12F715E2521E715F6901293 /* Info.plist */,
+				57E0701F2507FCAAF54FD86F2E3D4F06 /* Pods-THMReader.modulemap */,
+				C193C8AF76EA9FB09E24EB2B6777AFD4 /* Pods-THMReader-acknowledgements.markdown */,
+				E5FD0037C362125EBFD7D67062A92B37 /* Pods-THMReader-acknowledgements.plist */,
+				779BC784D8EFD8CD5299DC058B7CC085 /* Pods-THMReader-dummy.m */,
+				0A64BBEA4B7E793B87B79ADFE44739C8 /* Pods-THMReader-frameworks.sh */,
+				74766B9B2324DA8B06F2F1612C8299E4 /* Pods-THMReader-resources.sh */,
+				66BB635D5177D44B0EEA5C5D20C0ECFC /* Pods-THMReader-umbrella.h */,
+				EE7C1559D31FBA3A14F24928EF2FD353 /* Pods-THMReader.debug.xcconfig */,
+				5FAE0EB0704CB029E64B5FCCD7F7150A /* Pods-THMReader.release.xcconfig */,
+			);
+			name = "Pods-THMReader";
+			path = "Target Support Files/Pods-THMReader";
+			sourceTree = "<group>";
+		};
+		8F91EE078EA3977443D1BDC2601132EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE50AB4B3645EA9432322BA2E72BE2F9 /* iOS */,
+				9880A75209637E3915A438772C6A676D /* watchOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9880A75209637E3915A438772C6A676D /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				B7752798AED75D2190758A21548AB728 /* Foundation.framework */,
+			);
+			name = watchOS;
+			sourceTree = "<group>";
+		};
+		BBA232293EA56B90958806FB46C96F65 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				872AC1DDAB85DD6AEEA48C3D09F8107C /* Pods-THMReader */,
+				692FB0135C707D912D446A1B7760CC02 /* Pods-THMReader WatchKit App */,
+				44F6631237C1114B88EAC2C213430916 /* Pods-THMReader WatchKit Extension */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BE50AB4B3645EA9432322BA2E72BE2F9 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F9AE61DEB7F70B8D5B09290911F0E1C8 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C7F83A54982B7B74A158C913EF2F4298 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFF9F4D635FEA1806321C1DA765A3346 /* FeedKit.framework */,
+				806A1EADBBEF8DCC1DBCB744328AD6B7 /* FeedKit.framework */,
+				1BEAE4D1C183BF4C94941CF2DE2F1D08 /* FeedKit.framework */,
+				31407B21C4E1C25D494FF2232E4571E6 /* Pods_THMReader.framework */,
+				450E2D5C14A4F05B504982A0F6F03F2B /* Pods_THMReader_WatchKit_App.framework */,
+				A068AB64EC0F0EBED421ABAD281CFF6F /* Pods_THMReader_WatchKit_Extension.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D87C2D0654A8B93DEFE173A0C7550EB2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				724CDAFB81C91D8A69EE2274B01F6EAB /* FeedKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		035DB93F28B56F0CDFF3637ACDD7948E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				255BCDB861AE42C8C7E5AB2A6EDB19CF /* Pods-THMReader WatchKit Extension-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1185E392B80BC351FA2545E8451CD49C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4F403930E911BEF9CC90A677E4E80BE /* FeedKit-iOS10.0-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DDB1C5B0306E800DC0616F596C84FF0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55988A667B14BD30056611EAF0F31645 /* Pods-THMReader-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31918D2314C803574E8B6BB727B87E1A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7A5BE0FCF67FDDF5D68EDE9EC872A1E /* FeedKit-watchOS3.1-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		779ACC028D9CEB4FD46BED9C53A9378B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F256052F2FA1B2E660441830866EBE01 /* Pods-THMReader WatchKit App-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF28B1111E240BA66041D1523AD35FF5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AA2F8CC21E8666D19222EE54CB7A2C3 /* FeedKit-watchOS2.0-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1128DC25F92D9AD6E546B93398514346 /* Pods-THMReader WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F217C2B1C4CF95810153AFC2BD17AF8C /* Build configuration list for PBXNativeTarget "Pods-THMReader WatchKit App" */;
+			buildPhases = (
+				427E811E0989E3D1E2CC62FFC6BCDF03 /* Sources */,
+				F25AD3C526C87ED2277C86E5F1C1281C /* Frameworks */,
+				779ACC028D9CEB4FD46BED9C53A9378B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D63FAA2D6692C324AF86C64575D55A12 /* PBXTargetDependency */,
+			);
+			name = "Pods-THMReader WatchKit App";
+			productName = "Pods-THMReader WatchKit App";
+			productReference = 450E2D5C14A4F05B504982A0F6F03F2B /* Pods_THMReader_WatchKit_App.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2D9901D63DFA7F42CAF325CCFE912B2D /* FeedKit-iOS10.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 509C27920E7C2A216D4830031AC63E41 /* Build configuration list for PBXNativeTarget "FeedKit-iOS10.0" */;
+			buildPhases = (
+				3E5D131E798D1922EEC1ABFD154758F8 /* Sources */,
+				71A5A924717BCA52393D25795EFACEC3 /* Frameworks */,
+				1185E392B80BC351FA2545E8451CD49C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FeedKit-iOS10.0";
+			productName = "FeedKit-iOS10.0";
+			productReference = CFF9F4D635FEA1806321C1DA765A3346 /* FeedKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7133BBCE84533FD4D02F54B8F0F0923B /* FeedKit-watchOS2.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2033639F821B5B1E530C6D107484897 /* Build configuration list for PBXNativeTarget "FeedKit-watchOS2.0" */;
+			buildPhases = (
+				DEC21F39F7B965986FDD084F8013CA14 /* Sources */,
+				C3D094956524BCA6A7C241CD231961BC /* Frameworks */,
+				AF28B1111E240BA66041D1523AD35FF5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FeedKit-watchOS2.0";
+			productName = "FeedKit-watchOS2.0";
+			productReference = 806A1EADBBEF8DCC1DBCB744328AD6B7 /* FeedKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7BED7F56880B2D50B0FD91E2110B55B7 /* Pods-THMReader WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 091A9BFEFEED9C2528A0FCB6C27A3F08 /* Build configuration list for PBXNativeTarget "Pods-THMReader WatchKit Extension" */;
+			buildPhases = (
+				973CE1DF471E36A156C61F0CEBCDA70B /* Sources */,
+				83A66A77B79E40FC4C3D5D366FA3A6BD /* Frameworks */,
+				035DB93F28B56F0CDFF3637ACDD7948E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6FED94A5B8C3B69843D3B8596D140363 /* PBXTargetDependency */,
+			);
+			name = "Pods-THMReader WatchKit Extension";
+			productName = "Pods-THMReader WatchKit Extension";
+			productReference = A068AB64EC0F0EBED421ABAD281CFF6F /* Pods_THMReader_WatchKit_Extension.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DA26CFE9F1955E1361614C07C92E1659 /* FeedKit-watchOS3.1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5802CC967B708343584C64CF4E594C2E /* Build configuration list for PBXNativeTarget "FeedKit-watchOS3.1" */;
+			buildPhases = (
+				0296834CDED1E7C1EAD81D23CCFAEC32 /* Sources */,
+				C6C55A3E269FDA68D5FE9644E5EAAC3B /* Frameworks */,
+				31918D2314C803574E8B6BB727B87E1A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FeedKit-watchOS3.1";
+			productName = "FeedKit-watchOS3.1";
+			productReference = 1BEAE4D1C183BF4C94941CF2DE2F1D08 /* FeedKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FA45C771093E6AD6A682BAA706599047 /* Pods-THMReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 263FE6DB37E65EB6F2343B88C097E04B /* Build configuration list for PBXNativeTarget "Pods-THMReader" */;
+			buildPhases = (
+				14A1F0A6383D866B1950FE1E4A14FC42 /* Sources */,
+				CF20A67C3F8C739D64C504590A439CF4 /* Frameworks */,
+				1DDB1C5B0306E800DC0616F596C84FF0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFC791FBEF31E6CD5074C39E1A9F6035 /* PBXTargetDependency */,
+			);
+			name = "Pods-THMReader";
+			productName = "Pods-THMReader";
+			productReference = 31407B21C4E1C25D494FF2232E4571E6 /* Pods_THMReader.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = C7F83A54982B7B74A158C913EF2F4298 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D9901D63DFA7F42CAF325CCFE912B2D /* FeedKit-iOS10.0 */,
+				7133BBCE84533FD4D02F54B8F0F0923B /* FeedKit-watchOS2.0 */,
+				DA26CFE9F1955E1361614C07C92E1659 /* FeedKit-watchOS3.1 */,
+				FA45C771093E6AD6A682BAA706599047 /* Pods-THMReader */,
+				1128DC25F92D9AD6E546B93398514346 /* Pods-THMReader WatchKit App */,
+				7BED7F56880B2D50B0FD91E2110B55B7 /* Pods-THMReader WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0296834CDED1E7C1EAD81D23CCFAEC32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4B74534E39BCBD745395C4664B9A015 /* AtomFeed + Attributes Mapper.swift in Sources */,
+				8F1D2E3DAA681619F93D57D5135E52A8 /* AtomFeed + Characters Mapper.swift in Sources */,
+				6B3F4AB20525A776A83A6F6C1C1E7A31 /* AtomFeed.swift in Sources */,
+				D33F0D83935BED59507E3BD4A5BA9D57 /* AtomFeedAuthor.swift in Sources */,
+				DE1D4FC313ACC5E3E84E41C0302D9256 /* AtomFeedCategory.swift in Sources */,
+				0FEB53A9B1C2AB6A5EC47114029AEF6A /* AtomFeedContributor.swift in Sources */,
+				D1BC789429763CAA1BB73742183825EF /* AtomFeedEntry.swift in Sources */,
+				B7CD77E2D257C8CE89A8B3DF1E3E2099 /* AtomFeedEntryAuthor.swift in Sources */,
+				BEF132004EA01C41F98973DCA695D7ED /* AtomFeedEntryCategory.swift in Sources */,
+				B6CC854D054D4B0E167E5F036D500ACC /* AtomFeedEntryContent.swift in Sources */,
+				1F65896128F7BA09AE0CE2F0D2EE6452 /* AtomFeedEntryContributor.swift in Sources */,
+				502EAFEAF960417A8345602B90A056F7 /* AtomFeedEntryLink.swift in Sources */,
+				7455E66C3469ABD2CC48F0C7AB5300AC /* AtomFeedEntrySource.swift in Sources */,
+				9785CDAAD233B8F070511E919ACC26B6 /* AtomFeedEntrySummary.swift in Sources */,
+				F036D5FCBB23F3EE9BB722C69234582B /* AtomFeedGenerator.swift in Sources */,
+				B613B014A66A372588131163D878072C /* AtomFeedLink.swift in Sources */,
+				80E1237D570B1274A8A0A47CE272AB81 /* AtomFeedSubtitle.swift in Sources */,
+				7EDAF27AB528AA5B9D05E25C9A145266 /* AtomPath.swift in Sources */,
+				1478647D7CAB33A564DE98EAD5620F40 /* ContentNamespace.swift in Sources */,
+				1A0FE62F5AE13F0DE266BEAF9A730E6E /* DateSpec.swift in Sources */,
+				B699FB045140E4224A66CE5123587639 /* DublinCoreNamespace.swift in Sources */,
+				23E76FAA0F466F9BD797E8E5CCA33512 /* FeedKit-watchOS3.1-dummy.m in Sources */,
+				7BFB2829EC5ED2DEBF11AAB561855D04 /* FeedParser.swift in Sources */,
+				3261DF0FE19F2659F8F884CC09B5AF0B /* FeedType.swift in Sources */,
+				36D59EEA95927BD4EB75C87F8459A482 /* ISO8601DateFormatter.swift in Sources */,
+				5E4F729571FC4DBA2C6B956FD389DF14 /* Parser.swift in Sources */,
+				FEC3D30213081CF6F06988D43ABDB281 /* ParserError.swift in Sources */,
+				2974D8D111BC60BF00B0544745BCD85C /* Result.swift in Sources */,
+				0961AC103EBBA70B4386DB3FF9D4792A /* RFC3339DateFormatter.swift in Sources */,
+				33FFC26DBC8BD3B19CB4F5C1718E9F53 /* RFC822DateFormatter.swift in Sources */,
+				F0BB1760915B3E592EAE179760B8CB80 /* RSSFeed + Attributes Mapper.swift in Sources */,
+				723AB0DA2AEA85FCCE9D01CBCA0324BE /* RSSFeed + Characters Mapper.swift in Sources */,
+				96802ECF7E9324CE58CF2AB483B0F86A /* RSSFeed.swift in Sources */,
+				9C165A75D481E76A3B6F9F7FCD01773E /* RSSFeedCategory.swift in Sources */,
+				E82FC9291AE8F9F6D7263A1D3F278A1B /* RSSFeedCloud.swift in Sources */,
+				14871B00DAADCDBB33D1A7FA78FA5075 /* RSSFeedImage.swift in Sources */,
+				9BFB92B979DF355C73B97DCC85C9F3D7 /* RSSFeedItem.swift in Sources */,
+				48D536C85B4E6BE4F030CBBF8CB64664 /* RSSFeedItemCategory.swift in Sources */,
+				6D2DDCE567F7C2C92494833BE2694E33 /* RSSFeedItemEnclosure.swift in Sources */,
+				DAF94D7928473B6D790A71EAD30AE9AE /* RSSFeedItemGUID.swift in Sources */,
+				1248924CA4E5BE11D80C5DC68CC00FF7 /* RSSFeedItemSource.swift in Sources */,
+				AF8BADF0A26823F8546B0DC0985AA7EB /* RSSFeedSkipDay.swift in Sources */,
+				E3E53C72747D4086AC0379958BA01E1F /* RSSFeedSkipHour.swift in Sources */,
+				3C635E7981804B755805B49C8E47C12E /* RSSFeedTextInput.swift in Sources */,
+				40763E0C0A3313471BFDB4577EF83E3E /* RSSPath.swift in Sources */,
+				F972749FA5FE0841BE3954FB195F1B82 /* String + bool.swift in Sources */,
+				EF04E42C19B91D72850874348C7E9093 /* String + dateFromSpec.swift in Sources */,
+				1FA81E64A8B7F6CF84C8C054B0E9FF07 /* SyndicationNamespace.swift in Sources */,
+				C0173BFA2BAC87B80CEE499AAF25BFC8 /* SyndicationUpdatePeriod.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14A1F0A6383D866B1950FE1E4A14FC42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A85D342A233A5E8BE866D64C98A486B8 /* Pods-THMReader-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E5D131E798D1922EEC1ABFD154758F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07D901DE8BA372527CAAB96F7A2E0058 /* AtomFeed + Attributes Mapper.swift in Sources */,
+				5A3AC00CC68A3B85283FD597CCBFDCC4 /* AtomFeed + Characters Mapper.swift in Sources */,
+				8E6DC68E09CBBF6A56400F030D57D0CB /* AtomFeed.swift in Sources */,
+				49606E567EF8DCAEFC17C0A6E41D0E91 /* AtomFeedAuthor.swift in Sources */,
+				D4C5B15448D1C3ED439ACB6D6B875888 /* AtomFeedCategory.swift in Sources */,
+				30FA4551D1D369251BF579EF3F64D900 /* AtomFeedContributor.swift in Sources */,
+				AA7D9EA3AE1B9B03E197F9C4A18C5DC4 /* AtomFeedEntry.swift in Sources */,
+				C291AFA35C57E3773C7D07FE46BD2D20 /* AtomFeedEntryAuthor.swift in Sources */,
+				108C9A8B748CBCFD9820B3B163259441 /* AtomFeedEntryCategory.swift in Sources */,
+				840516CEA5FB5B2B40167F8E7E494B5B /* AtomFeedEntryContent.swift in Sources */,
+				96BF844D92C7731E171C25AC6A45B5BF /* AtomFeedEntryContributor.swift in Sources */,
+				F58FEC8B31B55F72D1A8B0E87D26EDBD /* AtomFeedEntryLink.swift in Sources */,
+				4BE340DD576590F8C0544E5E8DDB28CB /* AtomFeedEntrySource.swift in Sources */,
+				EA6AF038754BE23103FF8B03CE42348B /* AtomFeedEntrySummary.swift in Sources */,
+				522B2E3494FF32A449D6C96B6913827F /* AtomFeedGenerator.swift in Sources */,
+				8EFEE394DED2A0D6ACF665F445A69D86 /* AtomFeedLink.swift in Sources */,
+				E5B6456A0E07EC3F8073A8E546BCC420 /* AtomFeedSubtitle.swift in Sources */,
+				C3687D835BD0F52C6F38F34EE625AD89 /* AtomPath.swift in Sources */,
+				ED449C70748762B2820D6A19618A98BC /* ContentNamespace.swift in Sources */,
+				25149E9A3CFC0F17FD41F4C0CD07CCA0 /* DateSpec.swift in Sources */,
+				A96E309965199506F2A35FA80BD1A0D1 /* DublinCoreNamespace.swift in Sources */,
+				4B644F467495A83B79F15B69ED950C91 /* FeedKit-iOS10.0-dummy.m in Sources */,
+				8B167AF83A51121D2F29F11C97B233D2 /* FeedParser.swift in Sources */,
+				ECE57DCFA135BF27CE63313331002924 /* FeedType.swift in Sources */,
+				C8CB8D48E8C61D986A1B7DD6BEF9DF3E /* ISO8601DateFormatter.swift in Sources */,
+				449CAB9D281639FA0E7D1E23608B46E9 /* Parser.swift in Sources */,
+				6B6F5ED92241A1BC23C0B1FCF7C282B7 /* ParserError.swift in Sources */,
+				C5F41BFF55C0E6C7A039D461D6C20C3D /* Result.swift in Sources */,
+				FFDB63D381D5C10E6371E1EB6C9283EB /* RFC3339DateFormatter.swift in Sources */,
+				4E9DDF4AAEFB90E73BBED8C8A8C7C672 /* RFC822DateFormatter.swift in Sources */,
+				6F81913177BE03FCC57D46B5F664207C /* RSSFeed + Attributes Mapper.swift in Sources */,
+				E2C0835BCAA5F25CAFFC224FD823F5B5 /* RSSFeed + Characters Mapper.swift in Sources */,
+				E86CC647BF1B0046B038287A83F92B01 /* RSSFeed.swift in Sources */,
+				45F24520BF2EB07C3ED923C6C6A59B3E /* RSSFeedCategory.swift in Sources */,
+				6295F0235DB197DA3AEB1E202AFF8A26 /* RSSFeedCloud.swift in Sources */,
+				842BC67F0613EF5F40C17D3AB678B066 /* RSSFeedImage.swift in Sources */,
+				72BED96597E65E313E59B6B4A63B07CA /* RSSFeedItem.swift in Sources */,
+				390474428229BE290C2C41E8F613CA5A /* RSSFeedItemCategory.swift in Sources */,
+				68F8D4D396DC8ED8D0A6C4BFC3D9BA09 /* RSSFeedItemEnclosure.swift in Sources */,
+				D05FD7778D68FA3473FEB65D8195C415 /* RSSFeedItemGUID.swift in Sources */,
+				7BB01A50DE6BB7E99E04F7420167C1B1 /* RSSFeedItemSource.swift in Sources */,
+				5E3B647A30194DA86278D9635D249875 /* RSSFeedSkipDay.swift in Sources */,
+				CD0DAB1AAAD1BE08A8B4B263ADA03925 /* RSSFeedSkipHour.swift in Sources */,
+				73065F6C5FC4FF6BF5136D2399C59FC0 /* RSSFeedTextInput.swift in Sources */,
+				6D4B0A565937DCCC9C106C5382BE3616 /* RSSPath.swift in Sources */,
+				F66E7C403131DDBE34151B3F66D6C28E /* String + bool.swift in Sources */,
+				27963EF11D67797025AABC6CC23D7767 /* String + dateFromSpec.swift in Sources */,
+				BE45D0453D93C0FD476275A338B1070B /* SyndicationNamespace.swift in Sources */,
+				CF3DE1A42184A8455FB09A9F4F703B39 /* SyndicationUpdatePeriod.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		427E811E0989E3D1E2CC62FFC6BCDF03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0A4CCC66C6B634EFD652EE8A03AF1E3 /* Pods-THMReader WatchKit App-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		973CE1DF471E36A156C61F0CEBCDA70B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE8475751B5D512CC701720106227BA /* Pods-THMReader WatchKit Extension-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEC21F39F7B965986FDD084F8013CA14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				476188B15E935B465B1EEABC785FB075 /* AtomFeed + Attributes Mapper.swift in Sources */,
+				6AE79B5A23B072B6273C2DFE17404F6A /* AtomFeed + Characters Mapper.swift in Sources */,
+				4F3F480AF9E8471A53937956FEAD5E8F /* AtomFeed.swift in Sources */,
+				073051628F15D713441839EA0AB0C154 /* AtomFeedAuthor.swift in Sources */,
+				CA4AAACD339602269A7031BC1F650447 /* AtomFeedCategory.swift in Sources */,
+				9382580B6CCAC13A79DD7744C746E9FC /* AtomFeedContributor.swift in Sources */,
+				17DA92670F7E03EF15312C5E59A2C961 /* AtomFeedEntry.swift in Sources */,
+				F9FA2030793D3B26B3382B77B247CAA1 /* AtomFeedEntryAuthor.swift in Sources */,
+				BACA89521F6631D0334FB7AFD42AF664 /* AtomFeedEntryCategory.swift in Sources */,
+				22DDFE4CC4685012213C4CF6A83706CF /* AtomFeedEntryContent.swift in Sources */,
+				9E1394A647CE00F8F95CAA2073E02C8A /* AtomFeedEntryContributor.swift in Sources */,
+				6AFFC9A8E12361BBF44CCCF5128C9AFA /* AtomFeedEntryLink.swift in Sources */,
+				2D6018C720AB3F39387E5B22493356FA /* AtomFeedEntrySource.swift in Sources */,
+				B4E56787A3FF0C8C10B96A28BBC4221F /* AtomFeedEntrySummary.swift in Sources */,
+				321F5D4B3202A0C45C63D2730DE3244B /* AtomFeedGenerator.swift in Sources */,
+				CAE2D8537BD62D3A4F4E19712BA20DEE /* AtomFeedLink.swift in Sources */,
+				20B300AE70886036E0FBDDA0069698DC /* AtomFeedSubtitle.swift in Sources */,
+				9D22D25BBDFDF416DBC0198C27C56753 /* AtomPath.swift in Sources */,
+				A843D8B0B4F1C158138D741F2EACE00A /* ContentNamespace.swift in Sources */,
+				141020968E4C7E50E8E62E3F5BDA1729 /* DateSpec.swift in Sources */,
+				B81258AF777786DA1448CB369044D895 /* DublinCoreNamespace.swift in Sources */,
+				1A5D4798ABDA5E6FE5398CAEDF588EEC /* FeedKit-watchOS2.0-dummy.m in Sources */,
+				B8CFB1315B3513CF251546A3E4C384A1 /* FeedParser.swift in Sources */,
+				48B3FAD14E377CABA627874FF5C1060B /* FeedType.swift in Sources */,
+				B20E78C0A323064BFF0F2F0C7407C4E6 /* ISO8601DateFormatter.swift in Sources */,
+				07DCBA0D1603965200028D5664216BB9 /* Parser.swift in Sources */,
+				5F1DFB7CE87792325A8BE30889503E45 /* ParserError.swift in Sources */,
+				6269E1B348177712D37ACBCAD1F57824 /* Result.swift in Sources */,
+				AD302D580C1614B6FF6CD002877A8D51 /* RFC3339DateFormatter.swift in Sources */,
+				23ABECE225FF555E46D1F643FEA1CED1 /* RFC822DateFormatter.swift in Sources */,
+				4B76AA84AED58E9146C01E0A057C500B /* RSSFeed + Attributes Mapper.swift in Sources */,
+				1278FB8A13D2D834344D10215106873D /* RSSFeed + Characters Mapper.swift in Sources */,
+				F39FCDFD34CBEB81CC65B14A7D13857F /* RSSFeed.swift in Sources */,
+				95B7F676C0F32D2A49E8971EF5704DC4 /* RSSFeedCategory.swift in Sources */,
+				45217C274F1D8F193C1A0FC7D136FA65 /* RSSFeedCloud.swift in Sources */,
+				1C1B6DB8DA32578D31735BA15800BF18 /* RSSFeedImage.swift in Sources */,
+				31EA046A58BE36C9A58C5983DCEDEFCF /* RSSFeedItem.swift in Sources */,
+				F4591C29F65F0B0442A95C31F6B966B0 /* RSSFeedItemCategory.swift in Sources */,
+				6EA4DA0910FB14A48B6F9096F5354234 /* RSSFeedItemEnclosure.swift in Sources */,
+				F14E224A73B13DC2AE6EF6911B3F1548 /* RSSFeedItemGUID.swift in Sources */,
+				4218C8A5076075993F219070592C7005 /* RSSFeedItemSource.swift in Sources */,
+				814491311F08FAE6C1F70C16B3304868 /* RSSFeedSkipDay.swift in Sources */,
+				2904822FB96EC2B2DB12F06A5383E4E3 /* RSSFeedSkipHour.swift in Sources */,
+				98FDBD0C885D3CBC8A7AAE6CF415EE25 /* RSSFeedTextInput.swift in Sources */,
+				0714154FDD05B0E27BDCA4DE1CBDD299 /* RSSPath.swift in Sources */,
+				E9B4CEFC684703ECAF1879BEFC3C6BEE /* String + bool.swift in Sources */,
+				F117856BF54B116F2E77F2337CC5DB42 /* String + dateFromSpec.swift in Sources */,
+				F3FB0D7276C145F6EB22EE7CBD2B52C3 /* SyndicationNamespace.swift in Sources */,
+				14719BEDA52577F8C8F6AC3EC1FFB655 /* SyndicationUpdatePeriod.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6FED94A5B8C3B69843D3B8596D140363 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FeedKit-watchOS2.0";
+			target = 7133BBCE84533FD4D02F54B8F0F0923B /* FeedKit-watchOS2.0 */;
+			targetProxy = CDC9C0E2B87AB7DF6621AF5A2FC39588 /* PBXContainerItemProxy */;
+		};
+		D63FAA2D6692C324AF86C64575D55A12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FeedKit-watchOS3.1";
+			target = DA26CFE9F1955E1361614C07C92E1659 /* FeedKit-watchOS3.1 */;
+			targetProxy = 9290A8A1EE23E1A633B0790DBF6C52F2 /* PBXContainerItemProxy */;
+		};
+		FFC791FBEF31E6CD5074C39E1A9F6035 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FeedKit-iOS10.0";
+			target = 2D9901D63DFA7F42CAF325CCFE912B2D /* FeedKit-iOS10.0 */;
+			targetProxy = 4D1077600A6E41D79A2EAEC142A42A25 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3FA971FB93047456A4E2249EB72A3A82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4222B7C3BA2C3C56C2C29D1F78D5E50E /* Pods-THMReader WatchKit App.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-THMReader WatchKit App/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-THMReader WatchKit App/Pods-THMReader WatchKit App.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_THMReader_WatchKit_App;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		3FE830F2EF828E65D14DCC696028EA7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C56D760AD9F910C29CB8A9FCF596CAE0 /* FeedKit-watchOS3.1.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FeedKit-watchOS3.1/FeedKit-watchOS3.1-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FeedKit-watchOS3.1/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FeedKit-watchOS3.1/FeedKit-watchOS3.1.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FeedKit;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		4F4E153B967D6AAFC93DFBDB13EA52E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FAE0EB0704CB029E64B5FCCD7F7150A /* Pods-THMReader.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-THMReader/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-THMReader/Pods-THMReader.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_THMReader;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		55E5FEA40DFB8F6CFACEDB9E8C520855 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE7C1559D31FBA3A14F24928EF2FD353 /* Pods-THMReader.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-THMReader/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-THMReader/Pods-THMReader.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_THMReader;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		564EE0E5C987ACD57B0EE070F2769389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9EB9FD04886702DEA04055285950CD7 /* Pods-THMReader WatchKit App.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-THMReader WatchKit App/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-THMReader WatchKit App/Pods-THMReader WatchKit App.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_THMReader_WatchKit_App;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		64E47B6E2FBA33E96EB5D96B3563876F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 933148AB75BD6BC0FABC4F7BFFFAEF0A /* Pods-THMReader WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-THMReader WatchKit Extension/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-THMReader WatchKit Extension/Pods-THMReader WatchKit Extension.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_THMReader_WatchKit_Extension;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		7F64ACF917B77735942E284667E50CB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		A35CEB4B2F669134A046D6880B4F522F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5497777A49A85578313F9C64BC0AF691 /* FeedKit-watchOS2.0.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FeedKit-watchOS2.0/FeedKit-watchOS2.0-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FeedKit-watchOS2.0/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FeedKit-watchOS2.0/FeedKit-watchOS2.0.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FeedKit;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		ADDF5780038837EA173BF54138E0B0B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BDBCF7221CE6C9F7235319803749D0C /* FeedKit-iOS10.0.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FeedKit-iOS10.0/FeedKit-iOS10.0-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FeedKit-iOS10.0/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FeedKit-iOS10.0/FeedKit-iOS10.0.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FeedKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B4C417206ABC03F943A5C2769CE3BC0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5497777A49A85578313F9C64BC0AF691 /* FeedKit-watchOS2.0.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FeedKit-watchOS2.0/FeedKit-watchOS2.0-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FeedKit-watchOS2.0/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FeedKit-watchOS2.0/FeedKit-watchOS2.0.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FeedKit;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		D0C07E5F1BB2F385D7C757E01C37D3EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BDBCF7221CE6C9F7235319803749D0C /* FeedKit-iOS10.0.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FeedKit-iOS10.0/FeedKit-iOS10.0-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FeedKit-iOS10.0/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FeedKit-iOS10.0/FeedKit-iOS10.0.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FeedKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DF6FE7ABF31A3DD36503E4A6E2B9FFF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C56D760AD9F910C29CB8A9FCF596CAE0 /* FeedKit-watchOS3.1.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FeedKit-watchOS3.1/FeedKit-watchOS3.1-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FeedKit-watchOS3.1/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FeedKit-watchOS3.1/FeedKit-watchOS3.1.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FeedKit;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		FA8E00FBF88125B1AF101B3C47740F14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		FBD79F4D44789CF85B0EA0EB83427D7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 855B3BE087597258DDB8E823954F1301 /* Pods-THMReader WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-THMReader WatchKit Extension/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-THMReader WatchKit Extension/Pods-THMReader WatchKit Extension.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_THMReader_WatchKit_Extension;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		091A9BFEFEED9C2528A0FCB6C27A3F08 /* Build configuration list for PBXNativeTarget "Pods-THMReader WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64E47B6E2FBA33E96EB5D96B3563876F /* Debug */,
+				FBD79F4D44789CF85B0EA0EB83427D7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		263FE6DB37E65EB6F2343B88C097E04B /* Build configuration list for PBXNativeTarget "Pods-THMReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55E5FEA40DFB8F6CFACEDB9E8C520855 /* Debug */,
+				4F4E153B967D6AAFC93DFBDB13EA52E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA8E00FBF88125B1AF101B3C47740F14 /* Debug */,
+				7F64ACF917B77735942E284667E50CB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		509C27920E7C2A216D4830031AC63E41 /* Build configuration list for PBXNativeTarget "FeedKit-iOS10.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0C07E5F1BB2F385D7C757E01C37D3EA /* Debug */,
+				ADDF5780038837EA173BF54138E0B0B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5802CC967B708343584C64CF4E594C2E /* Build configuration list for PBXNativeTarget "FeedKit-watchOS3.1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FE830F2EF828E65D14DCC696028EA7E /* Debug */,
+				DF6FE7ABF31A3DD36503E4A6E2B9FFF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2033639F821B5B1E530C6D107484897 /* Build configuration list for PBXNativeTarget "FeedKit-watchOS2.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4C417206ABC03F943A5C2769CE3BC0B /* Debug */,
+				A35CEB4B2F669134A046D6880B4F522F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F217C2B1C4CF95810153AFC2BD17AF8C /* Build configuration list for PBXNativeTarget "Pods-THMReader WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				564EE0E5C987ACD57B0EE070F2769389 /* Debug */,
+				3FA971FB93047456A4E2249EB72A3A82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

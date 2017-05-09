@@ -1,0 +1,6 @@
+framework module FeedKit {
+  umbrella header "FeedKit-watchOS2.0-umbrella.h"
+
+  export *
+  module * { export * }
+}

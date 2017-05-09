@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F4787085B60ABCE90BAA253 /* Pods_THMReader_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9960B40A03DF8EE9B4FDB08D /* Pods_THMReader_WatchKit_Extension.framework */; };
+		946FE9CD1EC0D21600C2DD20 /* ArticleRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946FE9CC1EC0D21600C2DD20 /* ArticleRowController.swift */; };
+		946FE9CF1EC196B700C2DD20 /* ArticleInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946FE9CE1EC196B700C2DD20 /* ArticleInterfaceController.swift */; };
 		94854F231EC0BDBA00283EA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94854F221EC0BDBA00283EA9 /* AppDelegate.swift */; };
 		94854F251EC0BDBA00283EA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94854F241EC0BDBA00283EA9 /* ViewController.swift */; };
 		94854F281EC0BDBA00283EA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94854F261EC0BDBA00283EA9 /* Main.storyboard */; };
@@ -19,6 +22,8 @@
 		94854F461EC0BDBA00283EA9 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94854F451EC0BDBA00283EA9 /* InterfaceController.swift */; };
 		94854F481EC0BDBA00283EA9 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94854F471EC0BDBA00283EA9 /* ExtensionDelegate.swift */; };
 		94854F4A1EC0BDBA00283EA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94854F491EC0BDBA00283EA9 /* Assets.xcassets */; };
+		E8368A4EF128184D71E5F67A /* Pods_THMReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5756FD3BD5230FFEEC145E3 /* Pods_THMReader.framework */; };
+		FAD457E2DC96DD3280C716B8 /* Pods_THMReader_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B71E55339DE09A6D0233E6 /* Pods_THMReader_WatchKit_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +69,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		03B71E55339DE09A6D0233E6 /* Pods_THMReader_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_THMReader_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68DE3ED3C09625B389F1A342 /* Pods-THMReader WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THMReader WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-THMReader WatchKit App/Pods-THMReader WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		81976D5CF66495BC2104B427 /* Pods-THMReader WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THMReader WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-THMReader WatchKit Extension/Pods-THMReader WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		8629439D3A3E47CD580AB668 /* Pods-THMReader WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THMReader WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-THMReader WatchKit App/Pods-THMReader WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		946FE9CC1EC0D21600C2DD20 /* ArticleRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleRowController.swift; sourceTree = "<group>"; };
+		946FE9CE1EC196B700C2DD20 /* ArticleInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleInterfaceController.swift; sourceTree = "<group>"; };
 		94854F1F1EC0BDBA00283EA9 /* THMReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = THMReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94854F221EC0BDBA00283EA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94854F241EC0BDBA00283EA9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,13 +91,27 @@
 		94854F471EC0BDBA00283EA9 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		94854F491EC0BDBA00283EA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94854F4B1EC0BDBA00283EA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9960B40A03DF8EE9B4FDB08D /* Pods_THMReader_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_THMReader_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5756FD3BD5230FFEEC145E3 /* Pods_THMReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_THMReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C683BC557B39D92FE33EC5DD /* Pods-THMReader WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THMReader WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-THMReader WatchKit Extension/Pods-THMReader WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		DE34E6F8B63BB68EF8BE75E9 /* Pods-THMReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THMReader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-THMReader/Pods-THMReader.debug.xcconfig"; sourceTree = "<group>"; };
+		F94560ECE32AD0148C57025E /* Pods-THMReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THMReader.release.xcconfig"; path = "Pods/Target Support Files/Pods-THMReader/Pods-THMReader.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4F25F80DCCB47693EC6A93E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD457E2DC96DD3280C716B8 /* Pods_THMReader_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		94854F1C1EC0BDBA00283EA9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8368A4EF128184D71E5F67A /* Pods_THMReader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,12 +119,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F4787085B60ABCE90BAA253 /* Pods_THMReader_WatchKit_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47090DDC6867C125262321F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5756FD3BD5230FFEEC145E3 /* Pods_THMReader.framework */,
+				03B71E55339DE09A6D0233E6 /* Pods_THMReader_WatchKit_App.framework */,
+				9960B40A03DF8EE9B4FDB08D /* Pods_THMReader_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		94854F161EC0BDBA00283EA9 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +143,8 @@
 				94854F351EC0BDBA00283EA9 /* THMReader WatchKit App */,
 				94854F441EC0BDBA00283EA9 /* THMReader WatchKit Extension */,
 				94854F201EC0BDBA00283EA9 /* Products */,
+				E64104F57EEC7F72F38771EB /* Pods */,
+				47090DDC6867C125262321F2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,11 +185,26 @@
 			isa = PBXGroup;
 			children = (
 				94854F451EC0BDBA00283EA9 /* InterfaceController.swift */,
+				946FE9CE1EC196B700C2DD20 /* ArticleInterfaceController.swift */,
+				946FE9CC1EC0D21600C2DD20 /* ArticleRowController.swift */,
 				94854F471EC0BDBA00283EA9 /* ExtensionDelegate.swift */,
 				94854F491EC0BDBA00283EA9 /* Assets.xcassets */,
 				94854F4B1EC0BDBA00283EA9 /* Info.plist */,
 			);
 			path = "THMReader WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		E64104F57EEC7F72F38771EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE34E6F8B63BB68EF8BE75E9 /* Pods-THMReader.debug.xcconfig */,
+				F94560ECE32AD0148C57025E /* Pods-THMReader.release.xcconfig */,
+				68DE3ED3C09625B389F1A342 /* Pods-THMReader WatchKit App.debug.xcconfig */,
+				8629439D3A3E47CD580AB668 /* Pods-THMReader WatchKit App.release.xcconfig */,
+				C683BC557B39D92FE33EC5DD /* Pods-THMReader WatchKit Extension.debug.xcconfig */,
+				81976D5CF66495BC2104B427 /* Pods-THMReader WatchKit Extension.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,10 +214,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94854F561EC0BDBA00283EA9 /* Build configuration list for PBXNativeTarget "THMReader" */;
 			buildPhases = (
+				EAB5F1D7007EC73CFF543D7E /* [CP] Check Pods Manifest.lock */,
 				94854F1B1EC0BDBA00283EA9 /* Sources */,
 				94854F1C1EC0BDBA00283EA9 /* Frameworks */,
 				94854F1D1EC0BDBA00283EA9 /* Resources */,
 				94854F551EC0BDBA00283EA9 /* Embed Watch Content */,
+				3C650B61FAF7473C53022147 /* [CP] Embed Pods Frameworks */,
+				BDBA56D28BDD36A9CE900FE4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -180,8 +236,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94854F521EC0BDBA00283EA9 /* Build configuration list for PBXNativeTarget "THMReader WatchKit App" */;
 			buildPhases = (
+				A02E8C73DE0FCF1738019DE9 /* [CP] Check Pods Manifest.lock */,
 				94854F2F1EC0BDBA00283EA9 /* Resources */,
 				94854F511EC0BDBA00283EA9 /* Embed App Extensions */,
+				4F25F80DCCB47693EC6A93E9 /* Frameworks */,
+				F4260F923B4D9941EEA5B5D9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -197,9 +256,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94854F4E1EC0BDBA00283EA9 /* Build configuration list for PBXNativeTarget "THMReader WatchKit Extension" */;
 			buildPhases = (
+				4F01356B18DB747C2BC19B8F /* [CP] Check Pods Manifest.lock */,
 				94854F3C1EC0BDBA00283EA9 /* Sources */,
 				94854F3D1EC0BDBA00283EA9 /* Frameworks */,
 				94854F3E1EC0BDBA00283EA9 /* Resources */,
+				6F1099050E10950FAAD97E75 /* [CP] Embed Pods Frameworks */,
+				CACDC4865FC631E7D6E60D4E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -287,6 +349,129 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3C650B61FAF7473C53022147 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-THMReader/Pods-THMReader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F01356B18DB747C2BC19B8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6F1099050E10950FAAD97E75 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-THMReader WatchKit Extension/Pods-THMReader WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A02E8C73DE0FCF1738019DE9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BDBA56D28BDD36A9CE900FE4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-THMReader/Pods-THMReader-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CACDC4865FC631E7D6E60D4E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-THMReader WatchKit Extension/Pods-THMReader WatchKit Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAB5F1D7007EC73CFF543D7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F4260F923B4D9941EEA5B5D9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-THMReader WatchKit App/Pods-THMReader WatchKit App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		94854F1B1EC0BDBA00283EA9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -301,7 +486,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				946FE9CF1EC196B700C2DD20 /* ArticleInterfaceController.swift in Sources */,
 				94854F481EC0BDBA00283EA9 /* ExtensionDelegate.swift in Sources */,
+				946FE9CD1EC0D21600C2DD20 /* ArticleRowController.swift in Sources */,
 				94854F461EC0BDBA00283EA9 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,6 +629,7 @@
 		};
 		94854F4F1EC0BDBA00283EA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C683BC557B39D92FE33EC5DD /* Pods-THMReader WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				DEVELOPMENT_TEAM = WE27MBG759;
@@ -459,6 +647,7 @@
 		};
 		94854F501EC0BDBA00283EA9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81976D5CF66495BC2104B427 /* Pods-THMReader WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				DEVELOPMENT_TEAM = WE27MBG759;
@@ -476,6 +665,7 @@
 		};
 		94854F531EC0BDBA00283EA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68DE3ED3C09625B389F1A342 /* Pods-THMReader WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -494,6 +684,7 @@
 		};
 		94854F541EC0BDBA00283EA9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8629439D3A3E47CD580AB668 /* Pods-THMReader WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -512,6 +703,7 @@
 		};
 		94854F571EC0BDBA00283EA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE34E6F8B63BB68EF8BE75E9 /* Pods-THMReader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WE27MBG759;
@@ -525,6 +717,7 @@
 		};
 		94854F581EC0BDBA00283EA9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F94560ECE32AD0148C57025E /* Pods-THMReader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WE27MBG759;
@@ -555,6 +748,7 @@
 				94854F501EC0BDBA00283EA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94854F521EC0BDBA00283EA9 /* Build configuration list for PBXNativeTarget "THMReader WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -563,6 +757,7 @@
 				94854F541EC0BDBA00283EA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94854F561EC0BDBA00283EA9 /* Build configuration list for PBXNativeTarget "THMReader" */ = {
 			isa = XCConfigurationList;
@@ -571,6 +766,7 @@
 				94854F581EC0BDBA00283EA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

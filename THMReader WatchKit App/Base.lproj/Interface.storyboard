@@ -1,15 +1,56 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="THMReader_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="1Xf-IM-ZMZ">
+                            <items>
+                                <tableRow identifier="ArticleRow" id="dgH-18-f5u" customClass="ArticleRowControler" customModule="THMReader_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="b1n-0m-qOd">
+                                        <items>
+                                            <label width="136" height="39" alignment="left" text="Title" id="RiN-mC-BwC"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="textLabel" destination="RiN-mC-BwC" id="fF7-fi-qyJ"/>
+                                        <segue destination="GNq-ZI-PRl" kind="push" identifier="ShowArticle" id="Q2x-Bn-p3X"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tableView" destination="1Xf-IM-ZMZ" id="MKg-yg-V5i"/>
+                    </connections>
+                </controller>
             </objects>
+        </scene>
+        <!--Article Interface Controller-->
+        <scene sceneID="6MF-gv-d06">
+            <objects>
+                <controller id="GNq-ZI-PRl" customClass="ArticleInterfaceController" customModule="THMReader_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Title" id="dhJ-BQ-EHD"/>
+                        <label width="136" height="168" alignment="left" text="Body" textAlignment="left" numberOfLines="20" id="kTV-sV-xhz"/>
+                    </items>
+                    <connections>
+                        <outlet property="bodyLabel" destination="kTV-sV-xhz" id="pUf-ss-Vba"/>
+                        <outlet property="titleLabel" destination="dhJ-BQ-EHD" id="YoC-BU-HTO"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="421" y="127"/>
         </scene>
     </scenes>
 </document>

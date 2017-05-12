@@ -56,6 +56,7 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     // MARK: DataLoading
     
     func loadData(fromUrl url: URL){
+        self.setTitle("Loading...")
         FeedParser(URL: url)?.parse({ (result) in
             
             guard let feed = result.rssFeed, result.isSuccess else {

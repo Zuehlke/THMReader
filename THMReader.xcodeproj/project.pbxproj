@@ -22,6 +22,7 @@
 		94854F461EC0BDBA00283EA9 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94854F451EC0BDBA00283EA9 /* InterfaceController.swift */; };
 		94854F481EC0BDBA00283EA9 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94854F471EC0BDBA00283EA9 /* ExtensionDelegate.swift */; };
 		94854F4A1EC0BDBA00283EA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94854F491EC0BDBA00283EA9 /* Assets.xcassets */; };
+		9487E4FB1EC59FAF00DE71B7 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9487E4FA1EC59FAF00DE71B7 /* FeedItem.swift */; };
 		E8368A4EF128184D71E5F67A /* Pods_THMReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5756FD3BD5230FFEEC145E3 /* Pods_THMReader.framework */; };
 		FAD457E2DC96DD3280C716B8 /* Pods_THMReader_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B71E55339DE09A6D0233E6 /* Pods_THMReader_WatchKit_App.framework */; };
 /* End PBXBuildFile section */
@@ -91,6 +92,7 @@
 		94854F471EC0BDBA00283EA9 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		94854F491EC0BDBA00283EA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94854F4B1EC0BDBA00283EA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9487E4FA1EC59FAF00DE71B7 /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		9960B40A03DF8EE9B4FDB08D /* Pods_THMReader_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_THMReader_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5756FD3BD5230FFEEC145E3 /* Pods_THMReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_THMReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C683BC557B39D92FE33EC5DD /* Pods-THMReader WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THMReader WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-THMReader WatchKit Extension/Pods-THMReader WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 			children = (
 				94854F221EC0BDBA00283EA9 /* AppDelegate.swift */,
 				94854F241EC0BDBA00283EA9 /* ViewController.swift */,
+				9487E4FA1EC59FAF00DE71B7 /* FeedItem.swift */,
 				94854F261EC0BDBA00283EA9 /* Main.storyboard */,
 				94854F291EC0BDBA00283EA9 /* Assets.xcassets */,
 				94854F2B1EC0BDBA00283EA9 /* LaunchScreen.storyboard */,
@@ -479,6 +482,7 @@
 			files = (
 				94854F251EC0BDBA00283EA9 /* ViewController.swift in Sources */,
 				94854F231EC0BDBA00283EA9 /* AppDelegate.swift in Sources */,
+				9487E4FB1EC59FAF00DE71B7 /* FeedItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

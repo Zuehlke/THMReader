@@ -21,7 +21,5 @@ class ArticleInterfaceController: WKInterfaceController {
         
         self.titleLabel.setText(article.title)
         self.bodyLabel.setText(article.description)
-        
     }
-    
 }

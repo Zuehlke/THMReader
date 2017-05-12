@@ -17,9 +17,9 @@
                         <table alignment="left" id="1Xf-IM-ZMZ">
                             <items>
                                 <tableRow identifier="ArticleRow" id="dgH-18-f5u" customClass="ArticleRowControler" customModule="THMReader_WatchKit_Extension">
-                                    <group key="rootItem" width="1" alignment="left" id="b1n-0m-qOd">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="b1n-0m-qOd">
                                         <items>
-                                            <label width="136" height="39" alignment="left" text="Title" id="RiN-mC-BwC"/>
+                                            <label width="136" alignment="left" text="Title" numberOfLines="0" id="RiN-mC-BwC"/>
                                         </items>
                                     </group>
                                     <connections>
@@ -41,8 +41,10 @@
             <objects>
                 <controller id="GNq-ZI-PRl" customClass="ArticleInterfaceController" customModule="THMReader_WatchKit_Extension">
                     <items>
-                        <label alignment="left" text="Title" id="dhJ-BQ-EHD"/>
-                        <label width="136" height="168" alignment="left" text="Body" textAlignment="left" numberOfLines="20" id="kTV-sV-xhz"/>
+                        <label alignment="left" text="Title" numberOfLines="0" id="dhJ-BQ-EHD">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <label width="136" alignment="left" text="Body" textAlignment="left" numberOfLines="0" id="kTV-sV-xhz"/>
                     </items>
                     <connections>
                         <outlet property="bodyLabel" destination="kTV-sV-xhz" id="pUf-ss-Vba"/>

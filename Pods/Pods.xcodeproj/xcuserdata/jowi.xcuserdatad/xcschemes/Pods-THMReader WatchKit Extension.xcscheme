@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3E883722844B3523B90629A147CA5743"
+               BlueprintIdentifier = "7BED7F56880B2D50B0FD91E2110B55B7"
                BuildableName = "Pods_THMReader_WatchKit_Extension.framework"
                BlueprintName = "Pods-THMReader WatchKit Extension"
                ReferencedContainer = "container:Pods.xcodeproj">

@@ -17,6 +17,8 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     
     @IBOutlet var tableView: WKInterfaceTable!
 
+    var url = URL(string: "https://www.tagesschau.de/xml/rss2")!
+    
     var feed: RSSFeed?
 
     var session: WCSession? {
@@ -37,8 +39,7 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
             session = WCSession.default()
         }
 
-        let defaultUrl = URL(string: "https://www.tagesschau.de/xml/rss2")!
-        loadData(fromUrl: defaultUrl)
+        loadData(fromUrl: url)
     }
 
     
@@ -52,6 +53,13 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
             return nil
         }
     }
+    
+    // MARK: Actions
+    
+    @IBAction func onMenuItemRefreshPress() {
+        self.loadData(fromUrl: url)
+    }
+    
 
     // MARK: DataLoading
     
@@ -90,7 +98,8 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
 
     public func session(_ session: WCSession, didReceiveMessage message: [String: Any]) {
         if let urlString = message["url"] as? String, let url = URL(string: urlString){
-            loadData(fromUrl: url)
+            self.url = url
+            loadData(fromUrl: self.url)
         }
     }
 

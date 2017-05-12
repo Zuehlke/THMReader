@@ -30,6 +30,15 @@
                             </items>
                         </table>
                     </items>
+                    <menu key="menu" id="d22-Nx-pDf">
+                        <items>
+                            <menuItem title="Refresh" icon="resume" id="suF-U2-3t2">
+                                <connections>
+                                    <action selector="onMenuItemRefreshPress" destination="AgC-eL-Hgc" id="dg3-kt-9oj"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
                     <connections>
                         <outlet property="tableView" destination="1Xf-IM-ZMZ" id="MKg-yg-V5i"/>
                     </connections>

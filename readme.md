@@ -8,3 +8,7 @@ The app was developed for a lecture at [Technische Hochschule Mittelhessen](http
 
 * [IconsDB](http://www.iconsdb.com) for the RSS-Icon
 * [FeedKit](https://github.com/nmdias/FeedKit) for the great Feed-Parsing-Library
+
+## License
+
+This project is licensed under the terms of the [MIT license](LICENSE.md)
